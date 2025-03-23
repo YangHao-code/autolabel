@@ -36,13 +36,20 @@ This framework expects data in the following format:
 
 ### Training
 
-To train a model:
+To train a model(By myself simple test):
 
 ```bash
-python scripts/text_reasoning_train.py \
-    --config config.json \
-    --dataset-config dataset_config.json \
-    --output-dir experiments/text_reasoning
+python scripts/text_reasoning_train.py \     
+    --config configs/config.json \     
+    --dataset-config configs/dataset_config.json \     
+    --output-dir experiments/text_reasoning \     
+    --epochs 50     --batch-size 32     --lr 1e-4     --device cuda
+```
+### Visualization training process
+To show the training process:
+
+```bash
+tensorboard --logdir experiments/text_reasoning/tensorboard
 ```
 
 ### Evaluation
@@ -50,13 +57,12 @@ python scripts/text_reasoning_train.py \
 To evaluate a trained model:
 
 ```bash
-python scripts/text_reasoning_test.py \
-    --config config.json \
-    --dataset-config dataset_config.json \
-    --checkpoint experiments/text_reasoning/checkpoints/model_best.pth \
-    --output-dir experiments/text_reasoning/results \
-    --visualize \
-    --interpret-rules
+python scripts/text_reasoning_test.py \     
+    --config configs/config.json \     
+    --dataset-config configs/dataset_config.json \     
+    --checkpoint experiments/text_reasoning/checkpoints/model_best.pth \     
+    --output-dir experiments/text_reasoning/results \     
+    --batch-size 32     --device cuda     --visualize     --interpret-rules
 ```
 
 ## Key Components
