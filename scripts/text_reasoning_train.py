@@ -20,11 +20,11 @@ from abl.nn.text_encoder import TextEncoder
 from abl.models.concept_embedding import ConceptEmbedding
 from abl.models.quasi_symbolic import TextEncoder as QSTextEncoder
 from abl.models.quasi_symbolic import ConceptDetector, QuasiSymbolicReasoning
-from abl.models.reasoning_v1 import NSCLReasoning
+from abl.models.reasoning_v1 import ABLReasoning
 import shutil
 
 def main():
-    parser = argparse.ArgumentParser('NSCL Text Reasoning')
+    parser = argparse.ArgumentParser('ABL Text Reasoning')
     parser.add_argument('--config', required=True, help='configuration file')
     parser.add_argument('--dataset-config', required=True, help='dataset configuration file')
     parser.add_argument('--output-dir', required=True, help='output directory')
@@ -115,7 +115,7 @@ def main():
     quasi_symbolic = QuasiSymbolicReasoning(qs_text_encoder, concept_detector)
     
     # Create reasoning model
-    reasoning = NSCLReasoning(
+    reasoning = ABLReasoning(
         concept_embedding_dim=config['model']['concept_embedding']['embedding_dim'],
         hidden_dim=config['model']['reasoning']['hidden_dim'],
         num_rules=config['model']['reasoning']['num_rules'],

@@ -113,9 +113,9 @@ class RuleNetwork(nn.Module):
         return reasoning_output, rule_activations
 
 
-class NSCLReasoning(nn.Module):
+class ABLReasoning(nn.Module):
     """
-    Main reasoning module for NSCL applied to text labeling.
+    Main reasoning module for text labeling.
     """
     
     def __init__(self, concept_embedding_dim, hidden_dim, num_rules, num_concepts, num_labels):
