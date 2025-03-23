@@ -1,0 +1,983 @@
+
+        <html>
+        <head>
+            <title>NSCL Text Reasoning Visualization</title>
+            <style>
+                .visualization {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                    padding: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+                .section {
+                    margin-bottom: 30px;
+                }
+                .section-title {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #ddd;
+                }
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+                .sample {
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                }
+                .text {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    background-color: #f9f9f9;
+                    border-radius: 5px;
+                }
+                .prediction {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+                .concepts, .rules {
+                    margin-top: 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="visualization">
+                <h2>NSCL Text Reasoning Visualization</h2>
+        
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Newsgroups: comp.graphics
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!bogus.sura.net!howland.reston.ans.net!ira.uka.de!math.fu-berlin.de!informatik.tu-muenchen.de!bockamp
+From: bockamp@Informatik.TU-Muenchen.DE (Florian Bockamp)
+Subject: WANTED: Matrox PG-1281 CV driver
+Originator: bockamp@hphalle2g.informatik.tu-muenchen.de
+Sender: news@Informatik.TU-Muenchen.DE (USENET Newssystem)
+Organization: Technische Universitaet Muenchen, Germany
+Date: Thu, 22 Apr 1993 13:53:18 GMT
+Message-ID: <1993Apr22.135318.11166@Informatik.TU-Muenchen.DE>
+Lines: 24
+
+
+
+
+
+Hi!
+
+I need a Windows 3.1 driver for the Matrox PG-1281 CV
+SVGA card. 
+At the moment Windows runs only in the 640x480 mode.
+If you have a driver for this card, please send it 
+with the OEMSETUP.INF to 
+
+bockamp@Informatik.TU-Muenchen.DE
+
+Thanks!
+
+-- 
++-----------------------------------------------------------------+
+| Florian Bockamp                                  '''            |
+| bockamp@informatik.tu-muenchen.de               (o o)           |
++---------------------------------------------oOO--( )--OOo-------+
+|                                                   -             |
+|         "It's not a bug, it's an undocumented feature!"         |
++-----------------------------------------------------------------+
+</div><div class="prediction">Predicted Label: <strong>comp.graphics</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-27</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.999</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.999</td></tr><tr><td>Concept-0</td><td style="background-color: rgba(160, 94, 0, 0.3)">0.373</td></tr><tr><td>Concept-1</td><td style="background-color: rgba(184, 70, 0, 0.3)">0.277</td></tr><tr><td>Concept-9</td><td style="background-color: rgba(186, 68, 0, 0.3)">0.267</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(186, 68, 0, 0.3)">0.267</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(188, 66, 0, 0.3)">0.260</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(196, 58, 0, 0.3)">0.228</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(200, 54, 0, 0.3)">0.214</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(204, 50, 0, 0.3)">0.196</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(218, 36, 0, 0.3)">0.143</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(220, 34, 0, 0.3)">0.134</td></tr><tr><td>Concept-25</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.126</td></tr><tr><td>Concept-36</td><td style="background-color: rgba(223, 31, 0, 0.3)">0.122</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.103</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(233, 21, 0, 0.3)">0.085</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(234, 20, 0, 0.3)">0.081</td></tr><tr><td>Concept-18</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.068</td></tr><tr><td>Concept-35</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.058</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.057</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.055</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(241, 13, 0, 0.3)">0.051</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-18</td><td style="background-color: rgba(116, 138, 0, 0.3)">0.544</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(133, 121, 0, 0.3)">0.477</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(137, 117, 0, 0.3)">0.460</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(208, 46, 0, 0.3)">0.181</td></tr><tr><td>Rule-3</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.126</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Newsgroups: talk.politics.guns
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!darwin.sura.net!haven.umd.edu!uunet!bcstec!robs
+From: robs@bcstec.ca.boeing.com (Robert Sipe)
+Subject: Senator Patty Murrey's tax proposal
+Message-ID: <C5L3Mu.M5o@bcstec.ca.boeing.com>
+Organization: Boeing
+Date: Fri, 16 Apr 1993 16:11:17 GMT
+Lines: 19
+
+   If you haven't heard yet, US Senator Patty Murrey, a Mom in
+tennis shoes, is planning to introduce legislation to tax
+all handgun transactions and increase dealer licnese costs in
+order to raise money to cover the costs of un-insured shooting
+victums.  She plans to start with $2500.00 per year dealer fees
+and $40.00 or so, depending on the type of firearm, per gun
+transaction.  She plans to make it federal.
+   She was elected in Washington state under the trade mark as
+just a mom in tennis shoes.  She can be written to via the
+United States Senate, Washinton DC.  She is looking for your
+tennis shoes.  So if you have a pair please send them to her
+with your feelings regarding this tax.  
+   She claims she has heard little from the opposition.
+
+Lets inundate her!
+
+
+-- 
+BIGOT!  The definition of a bigot is a conservative winning an argument!
+</div><div class="prediction">Predicted Label: <strong>talk.politics.guns</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-21</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.998</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.997</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(10, 244, 0, 0.3)">0.959</td></tr><tr><td>Concept-47</td><td style="background-color: rgba(108, 146, 0, 0.3)">0.576</td></tr><tr><td>Concept-49</td><td style="background-color: rgba(113, 141, 0, 0.3)">0.553</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.249</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(217, 37, 0, 0.3)">0.146</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(218, 36, 0, 0.3)">0.143</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(223, 31, 0, 0.3)">0.123</td></tr><tr><td>Concept-42</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.106</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.087</td></tr><tr><td>Concept-24</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.062</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.056</td></tr><tr><td>Concept-8</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.056</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-0</td><td style="background-color: rgba(60, 194, 0, 0.3)">0.761</td></tr><tr><td>Rule-2</td><td style="background-color: rgba(150, 104, 0, 0.3)">0.410</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(166, 88, 0, 0.3)">0.349</td></tr><tr><td>Rule-13</td><td style="background-color: rgba(186, 68, 0, 0.3)">0.267</td></tr><tr><td>Rule-17</td><td style="background-color: rgba(201, 53, 0, 0.3)">0.211</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.185</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(223, 31, 0, 0.3)">0.123</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!noc.near.net!uunet!destroyer!cs.ubc.ca!mala.bc.ca!apland
+From: apland@mala.bc.ca (Ron Apland)
+Newsgroups: rec.sport.hockey
+Subject: Re: plus minus stat
+Message-ID: <1993Apr15.164136.1682@mala.bc.ca>
+Date: 15 Apr 93 16:41:35 -0700
+References: <1993Apr15.105309.1@tnclus.tele.nokia.fi> <1993Apr15.161737.28377@sol.UVic.CA>
+Organization: Malaspina College
+Lines: 28
+
+In article <1993Apr15.161737.28377@sol.UVic.CA>, gballent@hudson.UVic.CA (Greg  Ballentine) writes:
+> 
+> In article 1@tnclus.tele.nokia.fi, hahietanen@tnclus.tele.nokia.fi () writes:
+>>In article <1993Apr14.174139.6604@sol.UVic.CA>, gballent@vancouver.UVic.CA (Greg  Ballentine) writes:
+>>> 
+>>> 
+>>> +/- is a good stat because it is the only stat that I am aware of that
+>>> takes into account defensive play.  It isn't a measure of defensive
+>>> play- it takes into account offense and defence- all aspects of play.
+>>                                                   
+>>  If we are interested of real all-round players, the power play stats
+>>  should be considered, too. Because the power play is also one aspect 
+>>  of play! There is still something to be done with these player evaluation
+>>  tools!!
+> 
+> IMO any good player should score on power plays because of the man
+> advantage.  Very good power play scorers tend to become overrated
+> because their point totals are inflated by power play points.
+> +/- tends to expose these overrated players such as Brett Hull,
+> John Cullen and Dave Andreychuck.
+> 
+> Given the opportunity to play power play consistently, any player can
+> inflate his totals.
+> 
+> Gregmeister
+
+Except for Vancouver, of course.  Bure has a hard time scoring on that
+power play.  He's got 7 shorthanded goals and 13 pp goals I think!
+</div><div class="prediction">Predicted Label: <strong>rec.sport.hockey</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-0</td><td style="background-color: rgba(0, 254, 0, 0.3)">1.000</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(16, 238, 0, 0.3)">0.936</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(204, 50, 0, 0.3)">0.198</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(218, 36, 0, 0.3)">0.144</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-16</td><td style="background-color: rgba(198, 56, 0, 0.3)">0.221</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(227, 27, 0, 0.3)">0.109</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Newsgroups: rec.autos
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!ux1.cso.uiuc.edu!news.cso.uiuc.edu!uxa.cso.uiuc.edu!cka52397
+From: cka52397@uxa.cso.uiuc.edu (OrioleFan@uiuc)
+Subject: Re: V4 V6 V8 V12 Vx?
+Date: Thu, 22 Apr 1993 04:49:43 GMT
+Message-ID: <C5vC2w.MD9@news.cso.uiuc.edu>
+References: <1993Apr21.191744.3072@ole.cdac.com>
+Sender: usenet@news.cso.uiuc.edu (Net Noise owner)
+Organization: University of Illinois at Urbana
+Lines: 27
+
+ssave@ole.cdac.com (The Devil Reincarnate) writes:
+
+
+>  I am curious about knowing which commericial cars today
+>have v engines.
+
+>V4 - I don't know of any.
+>V6 - Legend, MR3? MR6?
+>V8 - Don't know of any.
+>V12 - Jaguar XJS
+
+
+> Please add to the list.
+
+
+> Thanks,
+> -S
+> ssave@ole.cdac.com
+
+	The Viper isn't an Inline 10 or Flat 10, is it?  I'm pretty sure its
+a V-10.  Also, the Cizeta??? is a V-16, but it may not yet be more than a 
+dream...
+
+
+-- 
+Chintan Amin <The University of Illinois UrbanaChampaign> mail: llama@uiuc.edu
+*******SIG UNDER CONSTRUCTION HARD HAT AREA********
+</div><div class="prediction">Predicted Label: <strong>rec.autos</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-0</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.996</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(4, 250, 0, 0.3)">0.983</td></tr><tr><td>Concept-27</td><td style="background-color: rgba(41, 213, 0, 0.3)">0.838</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(78, 176, 0, 0.3)">0.691</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(102, 152, 0, 0.3)">0.596</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(125, 129, 0, 0.3)">0.507</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(137, 117, 0, 0.3)">0.460</td></tr><tr><td>Concept-9</td><td style="background-color: rgba(137, 117, 0, 0.3)">0.459</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(141, 113, 0, 0.3)">0.444</td></tr><tr><td>Concept-35</td><td style="background-color: rgba(149, 105, 0, 0.3)">0.414</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(150, 104, 0, 0.3)">0.408</td></tr><tr><td>Concept-25</td><td style="background-color: rgba(161, 93, 0, 0.3)">0.366</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(163, 91, 0, 0.3)">0.360</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(168, 86, 0, 0.3)">0.339</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(170, 84, 0, 0.3)">0.331</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(173, 81, 0, 0.3)">0.320</td></tr><tr><td>Concept-31</td><td style="background-color: rgba(185, 69, 0, 0.3)">0.273</td></tr><tr><td>Concept-47</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.249</td></tr><tr><td>Concept-44</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.248</td></tr><tr><td>Concept-2</td><td style="background-color: rgba(197, 57, 0, 0.3)">0.227</td></tr><tr><td>Concept-41</td><td style="background-color: rgba(199, 55, 0, 0.3)">0.219</td></tr><tr><td>Concept-1</td><td style="background-color: rgba(199, 55, 0, 0.3)">0.216</td></tr><tr><td>Concept-36</td><td style="background-color: rgba(201, 53, 0, 0.3)">0.210</td></tr><tr><td>Concept-19</td><td style="background-color: rgba(204, 50, 0, 0.3)">0.198</td></tr><tr><td>Concept-18</td><td style="background-color: rgba(205, 49, 0, 0.3)">0.193</td></tr><tr><td>Concept-15</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.187</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(210, 44, 0, 0.3)">0.173</td></tr><tr><td>Concept-24</td><td style="background-color: rgba(214, 40, 0, 0.3)">0.159</td></tr><tr><td>Concept-30</td><td style="background-color: rgba(215, 39, 0, 0.3)">0.155</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(217, 37, 0, 0.3)">0.146</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(218, 36, 0, 0.3)">0.142</td></tr><tr><td>Concept-46</td><td style="background-color: rgba(223, 31, 0, 0.3)">0.124</td></tr><tr><td>Concept-11</td><td style="background-color: rgba(223, 31, 0, 0.3)">0.122</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(226, 28, 0, 0.3)">0.111</td></tr><tr><td>Concept-42</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.103</td></tr><tr><td>Concept-16</td><td style="background-color: rgba(229, 25, 0, 0.3)">0.100</td></tr><tr><td>Concept-29</td><td style="background-color: rgba(229, 25, 0, 0.3)">0.100</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.087</td></tr><tr><td>Concept-38</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.087</td></tr><tr><td>Concept-49</td><td style="background-color: rgba(233, 21, 0, 0.3)">0.086</td></tr><tr><td>Concept-20</td><td style="background-color: rgba(233, 21, 0, 0.3)">0.085</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(234, 20, 0, 0.3)">0.081</td></tr><tr><td>Concept-12</td><td style="background-color: rgba(234, 20, 0, 0.3)">0.078</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.056</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-18</td><td style="background-color: rgba(58, 196, 0, 0.3)">0.769</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(61, 193, 0, 0.3)">0.759</td></tr><tr><td>Rule-3</td><td style="background-color: rgba(116, 138, 0, 0.3)">0.545</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(151, 103, 0, 0.3)">0.408</td></tr><tr><td>Rule-15</td><td style="background-color: rgba(154, 100, 0, 0.3)">0.395</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(167, 87, 0, 0.3)">0.344</td></tr><tr><td>Rule-8</td><td style="background-color: rgba(173, 81, 0, 0.3)">0.320</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!zaphod.mps.ohio-state.edu!malgudi.oar.net!ucbeh.san.uc.edu!ucunix.san.uc.edu!babbage.ece.uc.edu!flash.ece.uc.edu!rbd
+Newsgroups: rec.sport.baseball
+Subject: Re: Jewish Baseball Players?
+Message-ID: <1qkne9$s4e@babbage.ece.uc.edu>
+From: rbd@flash.ece.uc.edu (Bobby Davis)
+Date: 15 Apr 1993 22:26:17 GMT
+References: <15APR93.14691229.0062@lafibm.lafayette.edu>
+Organization: University of Cincinnati
+NNTP-Posting-Host: flash.ece.uc.edu
+Lines: 5
+
+Hank Greenberg was probably the greatest ever.  He was also subject to a
+lot of heckling from bigots on the opposing teams and in the stands, but
+it never seemed to affect his performance negatively.
+
+Bob Davis	rbd@thor.ece.uc.edu
+</div><div class="prediction">Predicted Label: <strong>rec.sport.baseball</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-0</td><td style="background-color: rgba(0, 254, 0, 0.3)">1.000</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(50, 204, 0, 0.3)">0.800</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(188, 66, 0, 0.3)">0.262</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(220, 34, 0, 0.3)">0.136</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(230, 24, 0, 0.3)">0.097</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(238, 16, 0, 0.3)">0.065</td></tr><tr><td>Concept-44</td><td style="background-color: rgba(241, 13, 0, 0.3)">0.054</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-16</td><td style="background-color: rgba(206, 48, 0, 0.3)">0.189</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.129</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(225, 29, 0, 0.3)">0.114</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!noc.near.net!uunet!gatekeeper.us.oracle.com!barrnet.net!infoserv!gcarter
+From: gcarter@infoserv.com (George Carter)
+Newsgroups: sci.electronics
+Subject: Re: Does someone know what is the news group for IEEE.
+Message-ID: <Pbe1rAdJBh107h@gcarter.infoserv.com>
+Date: Wed, 21 Apr 93 20:29:03 -0800
+References: <1993Apr19.192953.22874@usl.edu>
+Reply-To: gcarter@infoserv.com
+Distribution: usa
+Organization: SFBAC
+Lines: 11
+X-Newsreader: Helldiver 1.07 (Waffle 1.64)
+
+In <1993Apr19.192953.22874@usl.edu> yxy4145@ucs.usl.edu (Yu Yingbin) writes:
+>       yxy4145@usl.edu     Thanks a lot.
+
+ieee.general
+
+and
+
+ieee.announce
+
+
+are the most frequently used groups.
+</div><div class="prediction">Predicted Label: <strong>sci.electronics</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-21</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.999</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(2, 252, 0, 0.3)">0.992</td></tr><tr><td>Concept-49</td><td style="background-color: rgba(4, 250, 0, 0.3)">0.983</td></tr><tr><td>Concept-10</td><td style="background-color: rgba(70, 184, 0, 0.3)">0.724</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(117, 137, 0, 0.3)">0.540</td></tr><tr><td>Concept-24</td><td style="background-color: rgba(173, 81, 0, 0.3)">0.319</td></tr><tr><td>Concept-36</td><td style="background-color: rgba(175, 79, 0, 0.3)">0.314</td></tr><tr><td>Concept-16</td><td style="background-color: rgba(218, 36, 0, 0.3)">0.143</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(219, 35, 0, 0.3)">0.140</td></tr><tr><td>Concept-44</td><td style="background-color: rgba(221, 33, 0, 0.3)">0.132</td></tr><tr><td>Concept-18</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.105</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.069</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.068</td></tr><tr><td>Concept-8</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.056</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-6</td><td style="background-color: rgba(61, 193, 0, 0.3)">0.760</td></tr><tr><td>Rule-17</td><td style="background-color: rgba(99, 155, 0, 0.3)">0.609</td></tr><tr><td>Rule-9</td><td style="background-color: rgba(135, 119, 0, 0.3)">0.469</td></tr><tr><td>Rule-4</td><td style="background-color: rgba(138, 116, 0, 0.3)">0.456</td></tr><tr><td>Rule-14</td><td style="background-color: rgba(157, 97, 0, 0.3)">0.382</td></tr><tr><td>Rule-1</td><td style="background-color: rgba(183, 71, 0, 0.3)">0.282</td></tr><tr><td>Rule-0</td><td style="background-color: rgba(189, 65, 0, 0.3)">0.256</td></tr><tr><td>Rule-13</td><td style="background-color: rgba(197, 57, 0, 0.3)">0.227</td></tr><tr><td>Rule-15</td><td style="background-color: rgba(201, 53, 0, 0.3)">0.210</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Xref: cantaloupe.srv.cs.cmu.edu comp.sys.ibm.pc.misc:34079 comp.sys.ibm.pc.hardware:60199
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!spool.mu.edu!uwm.edu!msuinfo!netnews.upenn.edu!eniac.seas.upenn.edu!balog
+From: balog@eniac.seas.upenn.edu (Eric J Balog)
+Newsgroups: comp.sys.ibm.pc.misc,comp.sys.ibm.pc.hardware
+Subject: FLOPPY DRIVE PROBLEM--HELP!!!
+Message-ID: <120761@netnews.upenn.edu>
+Date: 16 Apr 93 03:09:22 GMT
+Sender: news@netnews.upenn.edu
+Followup-To: comp.sys.ibm.pc.misc
+Organization: University of Pennsylvania
+Lines: 25
+Nntp-Posting-Host: eniac.seas.upenn.edu
+
+Hi!
+
+I have a problem with my floppy drives. In an effort to make my 3.5" drive 
+(normally b:) my a: drive, I switched the order of connections on the cable 
+from the serial card/floppy/ide controller. I booted up, changed the CMOS
+settings to reflect the a: drive as the 3.5 and the b: drive as the 5.25.
+The drive lights didn't come on, and there was a failure trying to read from
+those drives.
+
+I switched the cables back to their original positions, and then booted-up and
+restored the original CMOS settings. The lights for the floppies came on
+during this process, and they stay on for as long as the computer is on.
+I see that when there is a disk in a:, the drive is spinning, yet there seems
+to be no disk access. MSD.EXE and Norton SI detect both drives, but when I 
+try to get detailed information about a: or b:, Norton SI tells me that there
+is no disk in the drive.
+
+Can anyone offer any suggestions?
+I'm in desperate need of help!!!
+
+Thank you for your time.
+
+Eric Balog
+balog@eniac.seas.upenn.edu
+
+</div><div class="prediction">Predicted Label: <strong>comp.sys.ibm.pc.hardware</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-40</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.998</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(1, 253, 0, 0.3)">0.996</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(83, 171, 0, 0.3)">0.671</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(139, 115, 0, 0.3)">0.455</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(150, 104, 0, 0.3)">0.411</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(163, 91, 0, 0.3)">0.359</td></tr><tr><td>Concept-46</td><td style="background-color: rgba(182, 72, 0, 0.3)">0.285</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(187, 67, 0, 0.3)">0.266</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(189, 65, 0, 0.3)">0.255</td></tr><tr><td>Concept-27</td><td style="background-color: rgba(194, 60, 0, 0.3)">0.239</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(215, 39, 0, 0.3)">0.156</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(230, 24, 0, 0.3)">0.096</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.087</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(233, 21, 0, 0.3)">0.085</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(234, 20, 0, 0.3)">0.080</td></tr><tr><td>Concept-29</td><td style="background-color: rgba(236, 18, 0, 0.3)">0.071</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.069</td></tr><tr><td>Concept-12</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.061</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.058</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-18</td><td style="background-color: rgba(100, 154, 0, 0.3)">0.606</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(172, 82, 0, 0.3)">0.323</td></tr><tr><td>Rule-13</td><td style="background-color: rgba(189, 65, 0, 0.3)">0.255</td></tr><tr><td>Rule-1</td><td style="background-color: rgba(193, 61, 0, 0.3)">0.242</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(194, 60, 0, 0.3)">0.237</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(221, 33, 0, 0.3)">0.133</td></tr><tr><td>Rule-7</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.105</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!eddie.mit.edu!news.mtholyoke.edu!nic.umass.edu!caen!sol.ctr.columbia.edu!news.kei.com!ub!rutgers!igor.rutgers.edu!athos.rutgers.edu!christian
+From: hudson@athena.cs.uga.edu (Paul Hudson Jr)
+Newsgroups: soc.religion.christian
+Subject: Re: Portland earthquake
+Message-ID: <May.11.02.38.45.1993.28303@athos.rutgers.edu>
+Date: 11 May 93 06:38:46 GMT
+Sender: hedrick@athos.rutgers.edu
+Organization: University of Georgia, Athens
+Lines: 19
+Approved: christian@aramis.rutgers.edu
+
+In article <May.7.01.09.33.1993.14542@athos.rutgers.edu> cctr114@cantua.canterbury.ac.nz (Bill Rea) writes:
+>in history seems to imply some pretty serious sin. The one of the 
+>pastors in the church I attend, Christchurch City Elim, considers 
+>that a prophesy of a natural disaster as a "judgement from the Lord" 
+>is a clear sign that the "prophesy" is not from the Lord. 
+
+I would like to see his reasoning behind this.  You may have gotten 
+"burned" by natural disaster prophecies down there, but that
+does not mean that every natural disaster/judgement prophecy is
+false.  Take a quick look at the book of Jeremiah and it is obvious
+that judgement prophecies can be valid.  here in the US, it seems like
+we might have more of a problem with positive prophecies, though I
+am sure there may be a few people who are too into judgement.
+
+Sometimes God does give words that are difficult to swallow.  The
+relative positiveness of a prophecy is not necesarily grounds to
+dismiss it.  Much of the OT is not happy stuff.
+
+Link Hudson.
+</div><div class="prediction">Predicted Label: <strong>soc.religion.christian</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-28</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.999</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.187</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(236, 18, 0, 0.3)">0.074</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.063</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-16</td><td style="background-color: rgba(193, 61, 0, 0.3)">0.241</td></tr><tr><td>Rule-17</td><td style="background-color: rgba(210, 44, 0, 0.3)">0.174</td></tr><tr><td>Rule-8</td><td style="background-color: rgba(225, 29, 0, 0.3)">0.115</td></tr><tr><td>Rule-0</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.105</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Xref: cantaloupe.srv.cs.cmu.edu alt.conspiracy:21811 alt.activism:42822 talk.politics.guns:54312 soc.culture.jewish:63098
+Newsgroups: alt.conspiracy,alt.activism,talk.politics.guns,soc.culture.jewish
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!gatech!purdue!mentor.cc.purdue.edu!pop.stat.purdue.edu!hrubin
+From: hrubin@pop.stat.purdue.edu (Herman Rubin)
+Subject: Re: Gritz/JBS/Liberty Lobby/LaRouche/Christic Insitute/Libertarian/....
+Message-ID: <C5sFnz.Fo1@mentor.cc.purdue.edu>
+Sender: news@mentor.cc.purdue.edu (USENET News)
+Organization: Purdue University Statistics Department
+References: <1ql3r1$o2t@genesis.MCS.COM> <KCKLUGE.93Apr16155756@krusty.eecs.umich.edu> <1993Apr17.082102.4155@ccsvax.sfasu.edu>
+Date: Tue, 20 Apr 1993 15:14:22 GMT
+Lines: 49
+
+In article <1993Apr17.082102.4155@ccsvax.sfasu.edu> f_gautjw@ccsvax.sfasu.edu writes:
+>In article <KCKLUGE.93Apr16155756@krusty.eecs.umich.edu>, kckluge@eecs.umich.edu (Karl Kluge) writes:
+
+>> 
+>> ...and I'm sure that people who were big fans of fuedalism pissed and
+>> moaned about the emergence of the modern nation-state. Imagine, the King
+>> allowing serfs their freedom if they could live in the city for a year!
+>> Times change, technology changes, viable forms of social organization
+>> change. While concerns about preserving Western notions of civil liberties
+>> in the face of cultures with very different values is a valid one, it's
+>> a waste of effort to try to turn back the tide. It's much smarter to focus
+>> on trying to make sure that the emerging forms of social organization are
+
+>
+>	Your response is yet another sign of the trend towards One World
+>Government.  Many people such as yourself, who are otherwise probably
+>likeable and intelligent, show every sign of having been successfully
+>brainwashed.  You don't recognize that your "inevitable tide" is rolling
+>into chaos and in no way represents an advance for civilization.  Some
+>of us do indeed "lament the passing of old forms", such as the Bill of
+>Rights, which are indeed inalienable rights of man that cannot be
+>changed, transferred or surrendered...rights of man that far transcend
+
+>
+>	Yes, Napoleon wanted a Grand New Order.  Hitler wanted a
+>Thousand Year Reich.  Lenin knew that Bolshevism would give us the
+>Universal New Man.  The New World Order is just so much of the same
+>old tired garbage.  The pathetic part is that so many Americans seem
+
+"Put not your trust in princes" is the Biblical proverb.  The modern
+analog is governments.  At the time of the founding of the US, the
+idea that citizens had rights above those of the government was not
+that common, but was explicit in the writings of the founders.  To a
+considerable extent, Englishmen also had those rights.
+
+Yes, times change, and technology changes.  The possibility of 
+a few governments enserfing all of mankind was not possible until
+quite recently.  In the feudal system, the lord was almost as
+restricted as the serfs, so having the people enserf themselves
+does not make anything better; most feudal lords, and even most
+slaveowners, did not mistreat those under them.
+
+Freedom of speech and freedom of religion are under real attack NOW.
+
+-- 
+Herman Rubin, Dept. of Statistics, Purdue Univ., West Lafayette IN47907-1399
+Phone: (317)494-6054
+hrubin@snap.stat.purdue.edu (Internet, bitnet)  
+{purdue,pur-ee}!snap.stat!hrubin(UUCP)
+</div><div class="prediction">Predicted Label: <strong>talk.politics.guns</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-21</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.997</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.997</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(10, 244, 0, 0.3)">0.958</td></tr><tr><td>Concept-47</td><td style="background-color: rgba(103, 151, 0, 0.3)">0.596</td></tr><tr><td>Concept-49</td><td style="background-color: rgba(112, 142, 0, 0.3)">0.560</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(188, 66, 0, 0.3)">0.260</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(215, 39, 0, 0.3)">0.154</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(216, 38, 0, 0.3)">0.150</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(221, 33, 0, 0.3)">0.133</td></tr><tr><td>Concept-42</td><td style="background-color: rgba(225, 29, 0, 0.3)">0.114</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(235, 19, 0, 0.3)">0.077</td></tr><tr><td>Concept-24</td><td style="background-color: rgba(238, 16, 0, 0.3)">0.065</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.062</td></tr><tr><td>Concept-8</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.059</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-0</td><td style="background-color: rgba(60, 194, 0, 0.3)">0.762</td></tr><tr><td>Rule-2</td><td style="background-color: rgba(149, 105, 0, 0.3)">0.412</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(164, 90, 0, 0.3)">0.355</td></tr><tr><td>Rule-13</td><td style="background-color: rgba(185, 69, 0, 0.3)">0.273</td></tr><tr><td>Rule-17</td><td style="background-color: rgba(202, 52, 0, 0.3)">0.205</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.186</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(225, 29, 0, 0.3)">0.117</td></tr><tr><td>Rule-12</td><td style="background-color: rgba(229, 25, 0, 0.3)">0.102</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!ux1.cso.uiuc.edu!news.iastate.edu!iscsvax.uni.edu!harter5255
+From: harter5255@iscsvax.uni.edu
+Newsgroups: comp.sys.ibm.pc.hardware
+Subject: Help on hand scanners wanted
+Message-ID: <1993Apr18.164338.12485@iscsvax.uni.edu>
+Date: 18 Apr 93 16:43:38 -0600
+Organization: University of Northern Iowa
+Lines: 30
+
+Fellow netters,
+
+I'm in the market for a hand scanner.  However, I don't know anyone who has
+one.  I have my eye on two choices.
+
+Dexxa:  This scanner is available at Wal-Mart for $90.  It includes GrayWorks
+software and provides 400 dpi and 32 grayscales (I think).  The OCR software
+Catchword is available through mail-order for about $90 also.
+
+Mustek:  (Gray Artist for Windows)  This scanner offers 256 grayscales
+(according to Cad & Graphics) and 800 dpi.  It is available for $169
+mail-order and comes with Perceive OCR and Picture Publisher LE.
+
+I am also looking at a Genius hand scanner (B105) from Cad & Graphics.  It
+is basically the same as the Mustek scanner except for the resolution (400
+dpi) and price ($149).  
+
+Basically, I would like recommendations on which to buy.  I have heard that
+Logitech makes the best and manufactures Dexxa scanners.  But which one is the
+best buy?  Would 800 dpi really be helpful (output would be no better than HP
+LaserJet III or Canon BJ-200 - 300x300 to 360x360)?  I am leaning toward the
+Mustek because it offers the most features and is in the middle in terms of
+prices.  Which should I buy?
+
+If you have a hand scanner, please let me know whether or not you would
+recommend it.  Also, if you know of another scanner within the price range
+(under $225) that would be a better deal, please E-Mail me.  Any and all help
+would be greatly appreciated.
+
+- Kevin Harter
+</div><div class="prediction">Predicted Label: <strong>comp.sys.ibm.pc.hardware</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-40</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.998</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.996</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(84, 170, 0, 0.3)">0.670</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(137, 117, 0, 0.3)">0.462</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(149, 105, 0, 0.3)">0.415</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(165, 89, 0, 0.3)">0.352</td></tr><tr><td>Concept-46</td><td style="background-color: rgba(183, 71, 0, 0.3)">0.282</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(186, 68, 0, 0.3)">0.269</td></tr><tr><td>Concept-27</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.248</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.247</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(216, 38, 0, 0.3)">0.153</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(231, 23, 0, 0.3)">0.091</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(234, 20, 0, 0.3)">0.080</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(234, 20, 0, 0.3)">0.080</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(235, 19, 0, 0.3)">0.078</td></tr><tr><td>Concept-29</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.070</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.069</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.059</td></tr><tr><td>Concept-12</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.057</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-18</td><td style="background-color: rgba(100, 154, 0, 0.3)">0.606</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(172, 82, 0, 0.3)">0.325</td></tr><tr><td>Rule-13</td><td style="background-color: rgba(188, 66, 0, 0.3)">0.262</td></tr><tr><td>Rule-1</td><td style="background-color: rgba(192, 62, 0, 0.3)">0.244</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(194, 60, 0, 0.3)">0.235</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(219, 35, 0, 0.3)">0.138</td></tr><tr><td>Rule-7</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.102</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Xref: cantaloupe.srv.cs.cmu.edu talk.politics.misc:178906 alt.sex:111721 soc.men:68717 misc.legal:60926
+Newsgroups: talk.politics.misc,alt.sex,soc.men,misc.legal
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!sdd.hp.com!caen!msuinfo!uchinews!dent.uchicago.edu!jaffray
+From: jaffray@dent.uchicago.edu (Alan Jaffray)
+Subject: Re: Why not concentrate on child molesters?
+Message-ID: <1993Apr20.041558.29911@midway.uchicago.edu>
+Sender: news@uchinews.uchicago.edu (News System)
+Organization: Dept. of Mathematics
+References: <15441@optilink.COM> <15454@optilink.COM>
+Date: Tue, 20 Apr 1993 04:15:58 GMT
+Lines: 56
+
+In article <15454@optilink.COM> walsh@optilink.COM (Mark Walsh) writes:
+>In article <C5oG5H.4DE@exnet.co.uk>, sys1@exnet.co.uk (Xavier Gallagher) writes:
+>
+>> Well, the obvious point to make is would straight men fuck like rabbits
+>> if the oppertunity presented itself?
+>
+>> I reckon *any* *man* would go wildly promiscuous if presented with a
+>> huge variety of willing partners.
+>
+>If true, and if gays were the same as straights except
+>for sexual preference, I would imagine that gays would
+>have much less sex than straights because the available
+>pool for dates is less than one-tenth what it is for
+>straights.  Somebody correct (flame) me please!
+
+I *cannot* *believe* I am posting in this thread, but what
+the hell, he asked for it.
+
+I had sort of the same reaction myself when I was first realizing
+I was bi.  "So what, >90% of everyone else is straight, I'd never
+end up with a guy anyway."  As several people on soc.bi pointed
+out to me, this is true only if you find partners (for relationships
+or just for sex) in primarily straight circles.  Nowadays with gay
+culture quite visible in major cities and such, you can easily
+find yourself in an overwhelmingly queer social circle if you so
+choose.  (About half my friends are bi, and that's just from
+hanging out in the science fiction club and going to UCBU once a
+week, it's not as if I have to go out of my way and hang out in
+bars or something.)
+
+So the available pool for dates can be the same size.  Unless of
+course you're trying to date a random sample of the US population.
+
+As for promiscuity, I've traded email with Clayton on the topic,
+and he still doesn't seem to want to admit that yes, gay males
+are sometimes forced to resort to anonymous sex because they're
+closeted and can't afford to be seen in a permanent relationship.
+Or that part of the promiscuity is because of the messed-up gender
+roles in our society, and when males are dating males and they've
+*all* been trained to be the aggressor in sex, there's going to
+be more sex.  Or that what's "dysfunctional", what's "screwed up"
+is societal attitudes, not gay sexuality, and that's what 
+encourages deviant behavior in gay males.
+
+(also note that just because someone's had 200 sex partners 
+doesn't mean they're promiscuous.  yes, it sounds ridiculous,
+but it's quite possible for someone to go through a heavily
+closeted phase in which they have lots of anonymous sex with
+strangers, and then come out, start forming real relationships,
+and be monogamous or nearly so...)
+
+
+--                                                                       ____
+Alan Jaffray (jaffray@math.uchicago.edu)  Email, 'talk' always welcome.  \bi/
+Those who dance are thought mad by those who hear not the music -- Anon   \/
+B0H7f-t+w-cg+(+)k+?s-vm-h-pS6/3bgz-++o-x-v+j+N0178l--+a(+)f-vn-(++)e--+dvb+u+
+</div><div class="prediction">Predicted Label: <strong>talk.politics.misc</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-27</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.996</td></tr><tr><td>Concept-24</td><td style="background-color: rgba(8, 246, 0, 0.3)">0.966</td></tr><tr><td>Concept-49</td><td style="background-color: rgba(8, 246, 0, 0.3)">0.965</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(9, 245, 0, 0.3)">0.962</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(11, 243, 0, 0.3)">0.956</td></tr><tr><td>Concept-36</td><td style="background-color: rgba(11, 243, 0, 0.3)">0.955</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(11, 243, 0, 0.3)">0.954</td></tr><tr><td>Concept-18</td><td style="background-color: rgba(16, 238, 0, 0.3)">0.937</td></tr><tr><td>Concept-1</td><td style="background-color: rgba(25, 229, 0, 0.3)">0.899</td></tr><tr><td>Concept-16</td><td style="background-color: rgba(27, 227, 0, 0.3)">0.891</td></tr><tr><td>Concept-8</td><td style="background-color: rgba(79, 175, 0, 0.3)">0.687</td></tr><tr><td>Concept-10</td><td style="background-color: rgba(117, 137, 0, 0.3)">0.539</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(139, 115, 0, 0.3)">0.451</td></tr><tr><td>Concept-44</td><td style="background-color: rgba(161, 93, 0, 0.3)">0.365</td></tr><tr><td>Concept-6</td><td style="background-color: rgba(165, 89, 0, 0.3)">0.350</td></tr><tr><td>Concept-38</td><td style="background-color: rgba(177, 77, 0, 0.3)">0.302</td></tr><tr><td>Concept-9</td><td style="background-color: rgba(179, 75, 0, 0.3)">0.295</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(182, 72, 0, 0.3)">0.284</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(196, 58, 0, 0.3)">0.229</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(202, 52, 0, 0.3)">0.207</td></tr><tr><td>Concept-25</td><td style="background-color: rgba(203, 51, 0, 0.3)">0.203</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(218, 36, 0, 0.3)">0.141</td></tr><tr><td>Concept-19</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.126</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.126</td></tr><tr><td>Concept-20</td><td style="background-color: rgba(224, 30, 0, 0.3)">0.119</td></tr><tr><td>Concept-15</td><td style="background-color: rgba(225, 29, 0, 0.3)">0.117</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(229, 25, 0, 0.3)">0.102</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(230, 24, 0, 0.3)">0.095</td></tr><tr><td>Concept-39</td><td style="background-color: rgba(231, 23, 0, 0.3)">0.093</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(231, 23, 0, 0.3)">0.091</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(233, 21, 0, 0.3)">0.086</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(236, 18, 0, 0.3)">0.073</td></tr><tr><td>Concept-31</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.068</td></tr><tr><td>Concept-41</td><td style="background-color: rgba(238, 16, 0, 0.3)">0.066</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(238, 16, 0, 0.3)">0.063</td></tr><tr><td>Concept-29</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.063</td></tr><tr><td>Concept-47</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.061</td></tr><tr><td>Concept-3</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.056</td></tr><tr><td>Concept-30</td><td style="background-color: rgba(241, 13, 0, 0.3)">0.054</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(241, 13, 0, 0.3)">0.053</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-4</td><td style="background-color: rgba(-173, 428, 0, 0.3)">1.679</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(-121, 376, 0, 0.3)">1.478</td></tr><tr><td>Rule-17</td><td style="background-color: rgba(-84, 339, 0, 0.3)">1.332</td></tr><tr><td>Rule-9</td><td style="background-color: rgba(-7, 262, 0, 0.3)">1.028</td></tr><tr><td>Rule-0</td><td style="background-color: rgba(78, 176, 0, 0.3)">0.692</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(100, 154, 0, 0.3)">0.608</td></tr><tr><td>Rule-8</td><td style="background-color: rgba(176, 78, 0, 0.3)">0.309</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(177, 77, 0, 0.3)">0.305</td></tr><tr><td>Rule-13</td><td style="background-color: rgba(178, 76, 0, 0.3)">0.301</td></tr><tr><td>Rule-1</td><td style="background-color: rgba(178, 76, 0, 0.3)">0.298</td></tr><tr><td>Rule-15</td><td style="background-color: rgba(218, 36, 0, 0.3)">0.143</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Newsgroups: comp.os.ms-windows.misc
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!mcsun!ub4b!news.cs.kuleuven.ac.be!rudim
+From: rudim@cs.kuleuven.ac.be (Rudi Maelbrancke)
+Subject: EMM386.EXE and Windows and Dos6
+Message-ID: <1993Apr19.085014.17019@cs.kuleuven.ac.be>
+Sender: news@cs.kuleuven.ac.be
+Nntp-Posting-Host: piaget.cs.kuleuven.ac.be
+Organization: Dept. Computerwetenschappen
+Date: Mon, 19 Apr 1993 08:50:14 GMT
+Lines: 17
+
+In Windows I created a permanent Swap-file of 7771Kb as win3.1
+recommended me to do that (32bit access).
+If I use EMM386.EXE, after win3.1 startup I have 6689K of memory
+free, if I leave EMM386.EXE out of my config.sys I have 9935K
+of memory free, and windows recommends me a swap file of 11769K.
+
+I use DOS6, with memmaker, have 4MB of internal Memory and a 486DX,
+
+Does anybody knows why this is happening (possibly win needs
+some UMB's to manage virtual memory?, If true, which UMB's, those
+that EMM386 can find without including suspicious parts?)
+
+I need an optimized DOS-environment, because i develop applications for
+DOS using a windows programming environment.
+
+
+Rudi
+</div><div class="prediction">Predicted Label: <strong>comp.sys.ibm.pc.hardware</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-40</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.998</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(1, 253, 0, 0.3)">0.995</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(85, 169, 0, 0.3)">0.664</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(142, 112, 0, 0.3)">0.439</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(149, 105, 0, 0.3)">0.412</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(164, 90, 0, 0.3)">0.354</td></tr><tr><td>Concept-46</td><td style="background-color: rgba(183, 71, 0, 0.3)">0.281</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(188, 66, 0, 0.3)">0.260</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(190, 64, 0, 0.3)">0.254</td></tr><tr><td>Concept-27</td><td style="background-color: rgba(198, 56, 0, 0.3)">0.223</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(216, 38, 0, 0.3)">0.152</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(230, 24, 0, 0.3)">0.096</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.087</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.087</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(235, 19, 0, 0.3)">0.077</td></tr><tr><td>Concept-29</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.068</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.067</td></tr><tr><td>Concept-12</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.061</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(241, 13, 0, 0.3)">0.054</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-18</td><td style="background-color: rgba(101, 153, 0, 0.3)">0.601</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(173, 81, 0, 0.3)">0.320</td></tr><tr><td>Rule-13</td><td style="background-color: rgba(189, 65, 0, 0.3)">0.255</td></tr><tr><td>Rule-1</td><td style="background-color: rgba(194, 60, 0, 0.3)">0.237</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(195, 59, 0, 0.3)">0.233</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.127</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Xref: cantaloupe.srv.cs.cmu.edu comp.mail.mh:4026 comp.windows.x:67514
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!pitt.edu!zaphod.mps.ohio-state.edu!ub!rutgers!vpbuild!admin1!u013!jessea
+From: jessea@u013.me.vp.com (Jesse W. Asher)
+Newsgroups: comp.mail.mh,comp.unix.sysv386,comp.windows.x
+Subject: Compiling mh-6.8 (and xmh) on SCO 3.2.4.
+Message-ID: <1993Apr30.132044.15762@vpbuild.vp.com>
+Date: 30 Apr 93 13:20:44 GMT
+Sender: @vpbuild.vp.com
+Organization: Varco-Pruden Buildings
+Lines: 47
+
+I'm trying to get MH compiled (and then xmh) and I'm having some problems.
+I've got mh-6.8, using gcc on SCO 3.2.4.  My MH file is listed below.  Does
+anyone have any suggestions on what I can add to get it to compile??
+
+===========
+
+bin             /usr/local/bin
+debug           off
+etc             /usr/local/lib/mh
+mail            /usr/mail
+mailgroup       mail
+mandir          /usr/man
+manuals         gen
+chown           /bin/chown
+editor          prompter
+remove          /bin/mv -f
+# if no TCP/IP sendmail is available: change mts entry to sendmail
+mts             sendmail/smtp
+bboards         off
+bbdelivery      off
+bbhome          /usr/spool/bboards
+mf              off
+pop             off
+# options       SEE BELOW
+cc              gcc
+ccoptions       -O -ansi -D__STDC__=0 -DSYSV -DSYSV386 -DSCO -D_SVID
+curses          -lcurses
+ldoptions       -s
+ldoptlibs
+lex             lex
+sprintf         int
+sharedlib       off
+slibdir         /usr/local/lib
+oldload         off
+ranlib          off
+
+# define BIND only of the BSD4.3 named (TCP/IP) is used
+# define SOCKETS only if the system has BSD4.3 sockets (TCP/IP)
+options         ATZ BIND DUMB MHE MHRC MORE='"/usr/bin/more"'
+options         OVERHEAD SHADOW SOCKETS SYS5 SYS5DIR
+options         TZNAME WHATNOW
+
+-- 
+      Jesse W. Asher                                          (901)762-6000
+                             Varco-Pruden Buildings
+                 6000 Poplar Ave., Suite 400, Memphis, TN  38119
+    Internet: jessea@vpbuild.vp.com                   UUCP: vpbuild!jessea
+</div><div class="prediction">Predicted Label: <strong>comp.windows.x</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-27</td><td style="background-color: rgba(2, 252, 0, 0.3)">0.991</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(2, 252, 0, 0.3)">0.991</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(60, 194, 0, 0.3)">0.762</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(60, 194, 0, 0.3)">0.761</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(92, 162, 0, 0.3)">0.639</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(99, 155, 0, 0.3)">0.609</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(112, 142, 0, 0.3)">0.557</td></tr><tr><td>Concept-24</td><td style="background-color: rgba(118, 136, 0, 0.3)">0.536</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(136, 118, 0, 0.3)">0.465</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(144, 110, 0, 0.3)">0.434</td></tr><tr><td>Concept-9</td><td style="background-color: rgba(145, 109, 0, 0.3)">0.429</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(146, 108, 0, 0.3)">0.427</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(150, 104, 0, 0.3)">0.409</td></tr><tr><td>Concept-49</td><td style="background-color: rgba(153, 101, 0, 0.3)">0.398</td></tr><tr><td>Concept-18</td><td style="background-color: rgba(155, 99, 0, 0.3)">0.389</td></tr><tr><td>Concept-38</td><td style="background-color: rgba(163, 91, 0, 0.3)">0.357</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(165, 89, 0, 0.3)">0.349</td></tr><tr><td>Concept-25</td><td style="background-color: rgba(168, 86, 0, 0.3)">0.341</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(168, 86, 0, 0.3)">0.340</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(174, 80, 0, 0.3)">0.315</td></tr><tr><td>Concept-20</td><td style="background-color: rgba(176, 78, 0, 0.3)">0.308</td></tr><tr><td>Concept-1</td><td style="background-color: rgba(200, 54, 0, 0.3)">0.213</td></tr><tr><td>Concept-16</td><td style="background-color: rgba(205, 49, 0, 0.3)">0.194</td></tr><tr><td>Concept-6</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.187</td></tr><tr><td>Concept-36</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.185</td></tr><tr><td>Concept-0</td><td style="background-color: rgba(209, 45, 0, 0.3)">0.179</td></tr><tr><td>Concept-31</td><td style="background-color: rgba(214, 40, 0, 0.3)">0.160</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(217, 37, 0, 0.3)">0.146</td></tr><tr><td>Concept-46</td><td style="background-color: rgba(219, 35, 0, 0.3)">0.137</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(221, 33, 0, 0.3)">0.133</td></tr><tr><td>Concept-29</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.129</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.128</td></tr><tr><td>Concept-10</td><td style="background-color: rgba(223, 31, 0, 0.3)">0.124</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(226, 28, 0, 0.3)">0.112</td></tr><tr><td>Concept-11</td><td style="background-color: rgba(227, 27, 0, 0.3)">0.109</td></tr><tr><td>Concept-35</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.089</td></tr><tr><td>Concept-8</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.088</td></tr><tr><td>Concept-39</td><td style="background-color: rgba(233, 21, 0, 0.3)">0.086</td></tr><tr><td>Concept-47</td><td style="background-color: rgba(235, 19, 0, 0.3)">0.078</td></tr><tr><td>Concept-30</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.069</td></tr><tr><td>Concept-41</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.068</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.067</td></tr><tr><td>Concept-44</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.058</td></tr><tr><td>Concept-12</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.055</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-6</td><td style="background-color: rgba(-24, 279, 0, 0.3)">1.097</td></tr><tr><td>Rule-18</td><td style="background-color: rgba(27, 227, 0, 0.3)">0.891</td></tr><tr><td>Rule-7</td><td style="background-color: rgba(83, 171, 0, 0.3)">0.672</td></tr><tr><td>Rule-9</td><td style="background-color: rgba(94, 160, 0, 0.3)">0.631</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(168, 86, 0, 0.3)">0.337</td></tr><tr><td>Rule-1</td><td style="background-color: rgba(184, 70, 0, 0.3)">0.275</td></tr><tr><td>Rule-15</td><td style="background-color: rgba(185, 69, 0, 0.3)">0.273</td></tr><tr><td>Rule-8</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.248</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.248</td></tr><tr><td>Rule-16</td><td style="background-color: rgba(206, 48, 0, 0.3)">0.192</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Xref: cantaloupe.srv.cs.cmu.edu soc.religion.christian:21696
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!pitt.edu!gatech!howland.reston.ans.net!newsserver.jvnc.net!rutgers!igor.rutgers.edu!geneva.rutgers.edu!christian
+From: adamsj@gtewd.mtv.gtegsc.com
+Newsgroups: soc.religion.christian
+Subject: Re: Homosexuality issues in Christianity
+Message-ID: <May.19.05.15.04.1993.1017@geneva.rutgers.edu>
+Date: 19 May 93 09:15:06 GMT
+Sender: hedrick@geneva.rutgers.edu
+Reply-To: adamsj@gtewd.mtv.gtegsc.com
+Organization: GTE Govt. Systems, Electronics Def. Div.
+Lines: 18
+Approved: christian@aramis.rutgers.edu
+
+In article <May.13.02.29.39.1993.1505@geneva.rutgers.edu>, revdak@netcom.com (D. Andrew Kille) writes:
+> Of course the whole issue is one of discernment.  It may be that Satan
+> is trying to convince us that we know more than God.  Or it may be that
+> God is trying (as God did with Peter) to teach us something we don't
+> know- that "God shows no partiality, but in every nation anyone who fears
+> him and does what is right is acceptable to him." (Acts 10:34-35).
+> 
+> revdak@netcom.com
+
+Fine, but one of the points of this entire discussion is that "we"
+(conservative, reformed christians - this could start an argument...
+But isn't this idea that homosexuality is ok fairly "new" [this
+century] ? Is there any support for this being a viable viewpoint
+before this century? I don't know.) don't believe that homosexuality
+is "acceptable to Him". So your scripture quotation doesn't work for
+"us".
+
+-jeff adams-
+</div><div class="prediction">Predicted Label: <strong>soc.religion.christian</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-28</td><td style="background-color: rgba(0, 254, 0, 0.3)">0.999</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.185</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.070</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.060</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-16</td><td style="background-color: rgba(193, 61, 0, 0.3)">0.242</td></tr><tr><td>Rule-17</td><td style="background-color: rgba(210, 44, 0, 0.3)">0.174</td></tr><tr><td>Rule-8</td><td style="background-color: rgba(225, 29, 0, 0.3)">0.115</td></tr><tr><td>Rule-0</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.105</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Xref: cantaloupe.srv.cs.cmu.edu misc.wanted:31352 misc.forsale:76927 misc.forsale.computers.other:5596
+Newsgroups: misc.wanted,dc.forsale,misc.forsale,misc.forsale.computers.other
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!concert!uvaarpa!cv3.cv.nrao.edu!csugrad.cs.vt.edu!not-for-mail
+From: dwilson@csugrad.cs.vt.edu (David Wilson)
+Subject: Looking for AUDIO/VIDEO/COMPUTER/FURNITURE items
+Message-ID: <1rjde5$cgh@csugrad.cs.vt.edu>
+Lines: 35
+Sender: news@nrao.edu
+Organization: Virginia Tech Computer Science Dept, Blacksburg, VA
+Date: Tue, 27 Apr 1993 13:45:41 GMT
+Lines: 35
+
+Unless otherwise noted, I am mainly interested in USED items.
+If you have (any of) the following for sale, please contact me:
+        EMail           mbeck@vtssi.vt.edu
+        Phone           (703)552-4381
+        USMail          Michael Beck
+                        1200 Progress Street #5500E
+                        Blacksburg, Virginia 24060
+ 
+Please give as much info as possible (brand, age, condition, etc)
+~~~~~~~~~~WANTED as of 10AM, 4/27/93~~~~~~~~~~
+ 
+COMPUTER EQUIP:
+ 
+1       CHEAP (<$100) tape drive - pretty much any kind for IBM (Used)
+ 
+1       Memory expansion card for PS/2 Model 50Z
+ 
+1       Memory for PS/2 Model 50Z (New or Used)
+ 
+1       High Density (1.2 mb) 5 1/4 disk drive EXTERNAL
+ 
+NON-COMPUTER EQUIP:
+ 
+1       TV - 27" or bigger, stereo
+ 
+1       VCR - 4 Heads, stereo
+ 
+1       Receiver - 100 Watts or more w/ Dolby Prologic Surround Sound
+                capability
+ 
+1       Bed - Full or Queen sized - LOCAL OFFERS only, please
+ 
+1       Desk - LOCAL OFFERS only, please due to shipping constraints
+ 
+
+</div><div class="prediction">Predicted Label: <strong>misc.forsale</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-26</td><td style="background-color: rgba(1, 253, 0, 0.3)">0.995</td></tr><tr><td>Concept-0</td><td style="background-color: rgba(2, 252, 0, 0.3)">0.989</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(3, 251, 0, 0.3)">0.985</td></tr><tr><td>Concept-27</td><td style="background-color: rgba(142, 112, 0, 0.3)">0.443</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(184, 70, 0, 0.3)">0.278</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(200, 54, 0, 0.3)">0.213</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(202, 52, 0, 0.3)">0.206</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(206, 48, 0, 0.3)">0.189</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(219, 35, 0, 0.3)">0.139</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(227, 27, 0, 0.3)">0.106</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(229, 25, 0, 0.3)">0.098</td></tr><tr><td>Concept-9</td><td style="background-color: rgba(231, 23, 0, 0.3)">0.091</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(232, 22, 0, 0.3)">0.087</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(238, 16, 0, 0.3)">0.063</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.062</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(239, 15, 0, 0.3)">0.061</td></tr><tr><td>Concept-12</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.058</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-18</td><td style="background-color: rgba(140, 114, 0, 0.3)">0.448</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(142, 112, 0, 0.3)">0.441</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(145, 109, 0, 0.3)">0.429</td></tr><tr><td>Rule-15</td><td style="background-color: rgba(216, 38, 0, 0.3)">0.153</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Newsgroups: rec.sport.baseball
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!zaphod.mps.ohio-state.edu!malgudi.oar.net!news.ans.net!newsgate.watson.ibm.com!yktnews.watson.ibm.com!hawnews.watson.ibm.com!fenway!mjones
+From: mjones@watson.ibm.com (Mike Jones)
+Subject: Re: Bonilla
+Sender: news@hawnews.watson.ibm.com (NNTP News Poster)
+Message-ID: <mjones.735273896@fenway>
+Date: Tue, 20 Apr 1993 02:44:56 GMT
+Reply-To: mjones@donald.aix.kingston.ibm.com
+Disclaimer: This posting represents the poster's views, not necessarily those of IBM.
+References: <1993Apr16.161959.21006@ra.msstate.edu> <C5LILH.GtK@usenet.ucs.indiana.edu> <1993Apr17.213553.2181@organpipe.uug.arizona.edu> <1993Apr18.204643.4404@Princeton.EDU> <13521@news.duke.edu>
+Nntp-Posting-Host: fenway.aix.kingston.ibm.com
+Organization: IBM AIX/ESA Development, Kingston NY
+Lines: 41
+
+fierkelab@bchm.biochem.duke.edu (Eric Roush) writes:
+>>>All of these divisions based on race, religion, etc. make me sick.
+>>As they should.  Isn't it nice that MLB is finally waking up to
+>>their existence?  Isn't it a shame that hiring practices, on and off
+>>the field, have been discriminatory for so long?  (Quick: name a
+>>light-hitting black outfielder or 1B who lasted 10+ years in the bigs.
+>>I bet you can name two dozen white ones.)
+>Otis Nixon.
+>Darnell Coles
+>Henry Cotto
+
+Manny Mota.
+Billy Hatcher
+Herm Winningham.
+Lonnie Smith (not light hitting, but a horror in the field)
+Gary Redus
+Dion James
+Daryl Boston
+Vince Coleman (yeah, he's finally started to have a decent OBP)
+Cecil Espy
+Willie Wilson
+Gary Pettis
+Milt Thompson
+Gary Varsho
+
+OK, I admit to taking a quick browse through the Major League Handbook, but
+only after the first 7 or 8. Oh, and there's the all-time light-hitting
+black outfielder: Lou Brock. Look it up. And Curt Flood. Cesar Geronimo.
+Cesar Cedeno. 
+
+>Note:  These guys may not have reached 10 years yet, but they've got
+>to be close.
+
+Likewise for my list. Oh, and a prediction: Milt Cuyler.
+
+ Mike Jones | AIX High-End Development | mjones@donald.aix.kingston.ibm.com
+
+You know the great thing about TV?  If something important happens anywhere
+at all in the world, no matter what time of the day or night, you can always
+change the channel.
+	- Jim Ignatowski
+</div><div class="prediction">Predicted Label: <strong>rec.sport.baseball</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-0</td><td style="background-color: rgba(0, 254, 0, 0.3)">1.000</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(58, 196, 0, 0.3)">0.770</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(187, 67, 0, 0.3)">0.265</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(220, 34, 0, 0.3)">0.134</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(224, 30, 0, 0.3)">0.120</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(237, 17, 0, 0.3)">0.069</td></tr><tr><td>Concept-44</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.055</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-16</td><td style="background-color: rgba(209, 45, 0, 0.3)">0.177</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(222, 32, 0, 0.3)">0.129</td></tr><tr><td>Rule-6</td><td style="background-color: rgba(223, 31, 0, 0.3)">0.122</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Xref: cantaloupe.srv.cs.cmu.edu misc.consumers:67736 sci.med:58852 rec.food.cooking:65270 sci.environment:29459
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!zaphod.mps.ohio-state.edu!cs.utexas.edu!uunet!tis.com!richard
+From: richard@tis.com (Richard Clark)
+Newsgroups: misc.consumers,sci.med,rec.food.cooking,sci.environment
+Subject: Re: Is MSG sensitivity superstition?
+Date: 16 Apr 1993 21:00:03 GMT
+Organization: Trusted Information Systems, Inc.
+Lines: 30
+Message-ID: <1qn6oj$4d3@sol.TIS.COM>
+NNTP-Posting-Host: sol.tis.com
+
+>packer@delphi.gsfc.nasa.gov (Charles Packer) writes:
+>
+>>Is there such a thing as MSG (monosodium glutamate) sensitivity?
+>>I saw in the NY Times Sunday that scientists have testified before 
+>>an FDA advisory panel that complaints about MSG sensitivity are
+>>superstition. Anybody here have experience to the contrary? 
+>
+>>I'm old enough to remember that the issue has come up at least
+>>a couple of times since the 1960s. Then it was called the
+>>"Chinese restaurant syndrome" because Chinese cuisine has
+>>always used it.
+>
+
+	My blood pressure soars, my heart pounds, and I can't get to sleep
+for the life of me... feels about like I just drank 8 cups of coffee.
+
+	I avoid it, and beet sugar, flavor enhancers, beet powder, and
+whatever other names it may go under. Basicaly I read the ingredients, and
+if I don't know what they all are, I don't buy the product.
+
+	MSG sensitivity is definately *real*.
+
+
+
+-----------------------Relativity Schmelativity-----------------------------
+ Richard H. Clark				My opinions are my own, and
+ LUNATIK - watch for me on the road...		ought to be yours, but under
+ It's not my fault... I voted PEROT!		no circumstances are they
+ richard@tis.com				those of my company...
+-----------------------------------------------------------------------------
+</div><div class="prediction">Predicted Label: <strong>sci.med</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-0</td><td style="background-color: rgba(0, 254, 0, 0.3)">1.000</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(4, 250, 0, 0.3)">0.982</td></tr><tr><td>Concept-41</td><td style="background-color: rgba(228, 26, 0, 0.3)">0.102</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(231, 23, 0, 0.3)">0.092</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(235, 19, 0, 0.3)">0.078</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.057</td></tr><tr><td>Concept-27</td><td style="background-color: rgba(240, 14, 0, 0.3)">0.056</td></tr><tr><td>Concept-15</td><td style="background-color: rgba(241, 13, 0, 0.3)">0.052</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(241, 13, 0, 0.3)">0.052</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-6</td><td style="background-color: rgba(148, 106, 0, 0.3)">0.418</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(170, 84, 0, 0.3)">0.332</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(173, 81, 0, 0.3)">0.320</td></tr><tr><td>Rule-2</td><td style="background-color: rgba(178, 76, 0, 0.3)">0.298</td></tr><tr><td>Rule-16</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.249</td></tr><tr><td>Rule-15</td><td style="background-color: rgba(197, 57, 0, 0.3)">0.226</td></tr><tr><td>Rule-14</td><td style="background-color: rgba(199, 55, 0, 0.3)">0.216</td></tr><tr><td>Rule-18</td><td style="background-color: rgba(214, 40, 0, 0.3)">0.157</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Newsgroups: talk.politics.mideast
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!emory!sol.ctr.columbia.edu!zaphod.mps.ohio-state.edu!sdd.hp.com!network.ucsd.edu!news.service.uci.edu!unogate!stssdxb
+From: stssdxb@st.unocal.com (Dorin Baru)
+Subject: Re: No land for peace - No negotiatians
+Message-ID: <1993Apr5.221108.28045@unocal.com>
+Sender: news@unocal.com (Unocal USENET News)
+Organization: Unocal Corporation
+Date: Mon, 5 Apr 1993 22:11:08 GMT
+Lines: 52
+
+
+
+hasan@McRCIM.McGill.EDU writes:
+
+
+>Ok. I donot know why there are israeli voices against negotiations. However,
+>i would guess that is because they refuse giving back a land for those who
+>have the right for it.
+
+Sounds like wishful guessing.
+
+
+>As for the Arabian and Palestinean voices that are against the
+>current negotiations and the so-called peace process, they
+>are not against peace per se, but rather for their well-founded predictions
+>that Israel would NOT give an inch of the West bank (and most probably the same
+>for Golan Heights) back to the Arabs. An 18 months of "negotiations" in Madrid,
+>and Washington proved these predictions. Now many will jump on me saying why
+>are you blaming israelis for no-result negotiations.
+>I would say why would the Arabs stall the negotiations, what do they have to
+>loose ?
+
+
+'So-called' ? What do you mean ? How would you see the peace process?
+
+So you say palestineans do not negociate because of 'well-founded' predictions ?
+How do you know that they are 'well founded' if you do not test them at the 
+table ? 18 months did not prove anything, but it's always the other side at 
+fault, right ?
+
+Why ? I do not know why, but if, let's say, the Palestineans (some of them) want
+ALL ISRAEL, and these are known not to be accepted terms by israelis.
+
+Or, maybe they (palestinenans) are not yet ready for statehood ?
+
+Or, maybe there is too much politics within the palestinean leadership, too many
+fractions aso ?
+
+I am not saying that one of these reasons is indeed the real one, but any of
+these could make arabs stall the negotiations.
+
+>Arabs feel that the current "negotiations" is ONLY for legitimizing the current
+>status-quo and for opening the doors of the Arab markets for israeli trade and
+>"oranges". That is simply unacceptable and would be revoked.
+ 
+I like California oranges. And the feelings may get sharper at the table.
+
+
+
+Regards,
+
+Dorin
+</div><div class="prediction">Predicted Label: <strong>talk.politics.mideast</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-27</td><td style="background-color: rgba(17, 237, 0, 0.3)">0.931</td></tr><tr><td>Concept-0</td><td style="background-color: rgba(23, 231, 0, 0.3)">0.909</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(26, 228, 0, 0.3)">0.895</td></tr><tr><td>Concept-9</td><td style="background-color: rgba(85, 169, 0, 0.3)">0.666</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(93, 161, 0, 0.3)">0.634</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(100, 154, 0, 0.3)">0.604</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(103, 151, 0, 0.3)">0.596</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(121, 133, 0, 0.3)">0.525</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(126, 128, 0, 0.3)">0.506</td></tr><tr><td>Concept-35</td><td style="background-color: rgba(127, 127, 0, 0.3)">0.500</td></tr><tr><td>Concept-25</td><td style="background-color: rgba(133, 121, 0, 0.3)">0.475</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(135, 119, 0, 0.3)">0.468</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(136, 118, 0, 0.3)">0.466</td></tr><tr><td>Concept-1</td><td style="background-color: rgba(136, 118, 0, 0.3)">0.464</td></tr><tr><td>Concept-31</td><td style="background-color: rgba(138, 116, 0, 0.3)">0.457</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(144, 110, 0, 0.3)">0.432</td></tr><tr><td>Concept-24</td><td style="background-color: rgba(145, 109, 0, 0.3)">0.430</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(145, 109, 0, 0.3)">0.428</td></tr><tr><td>Concept-36</td><td style="background-color: rgba(146, 108, 0, 0.3)">0.427</td></tr><tr><td>Concept-18</td><td style="background-color: rgba(146, 108, 0, 0.3)">0.427</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(147, 107, 0, 0.3)">0.423</td></tr><tr><td>Concept-15</td><td style="background-color: rgba(152, 102, 0, 0.3)">0.403</td></tr><tr><td>Concept-19</td><td style="background-color: rgba(158, 96, 0, 0.3)">0.379</td></tr><tr><td>Concept-47</td><td style="background-color: rgba(159, 95, 0, 0.3)">0.375</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(160, 94, 0, 0.3)">0.371</td></tr><tr><td>Concept-2</td><td style="background-color: rgba(162, 92, 0, 0.3)">0.361</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(168, 86, 0, 0.3)">0.341</td></tr><tr><td>Concept-44</td><td style="background-color: rgba(169, 85, 0, 0.3)">0.337</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(172, 82, 0, 0.3)">0.324</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(173, 81, 0, 0.3)">0.319</td></tr><tr><td>Concept-16</td><td style="background-color: rgba(181, 73, 0, 0.3)">0.289</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(181, 73, 0, 0.3)">0.288</td></tr><tr><td>Concept-20</td><td style="background-color: rgba(182, 72, 0, 0.3)">0.283</td></tr><tr><td>Concept-6</td><td style="background-color: rgba(185, 69, 0, 0.3)">0.272</td></tr><tr><td>Concept-41</td><td style="background-color: rgba(186, 68, 0, 0.3)">0.268</td></tr><tr><td>Concept-29</td><td style="background-color: rgba(194, 60, 0, 0.3)">0.236</td></tr><tr><td>Concept-38</td><td style="background-color: rgba(195, 59, 0, 0.3)">0.232</td></tr><tr><td>Concept-30</td><td style="background-color: rgba(197, 57, 0, 0.3)">0.224</td></tr><tr><td>Concept-46</td><td style="background-color: rgba(198, 56, 0, 0.3)">0.223</td></tr><tr><td>Concept-12</td><td style="background-color: rgba(199, 55, 0, 0.3)">0.218</td></tr><tr><td>Concept-42</td><td style="background-color: rgba(203, 51, 0, 0.3)">0.200</td></tr><tr><td>Concept-49</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.185</td></tr><tr><td>Concept-8</td><td style="background-color: rgba(208, 46, 0, 0.3)">0.181</td></tr><tr><td>Concept-11</td><td style="background-color: rgba(209, 45, 0, 0.3)">0.179</td></tr><tr><td>Concept-10</td><td style="background-color: rgba(210, 44, 0, 0.3)">0.175</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(212, 42, 0, 0.3)">0.168</td></tr><tr><td>Concept-39</td><td style="background-color: rgba(217, 37, 0, 0.3)">0.147</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(220, 34, 0, 0.3)">0.134</td></tr><tr><td>Concept-3</td><td style="background-color: rgba(220, 34, 0, 0.3)">0.133</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(226, 28, 0, 0.3)">0.111</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-6</td><td style="background-color: rgba(-81, 336, 0, 0.3)">1.319</td></tr><tr><td>Rule-18</td><td style="background-color: rgba(30, 224, 0, 0.3)">0.879</td></tr><tr><td>Rule-8</td><td style="background-color: rgba(104, 150, 0, 0.3)">0.591</td></tr><tr><td>Rule-3</td><td style="background-color: rgba(108, 146, 0, 0.3)">0.573</td></tr><tr><td>Rule-10</td><td style="background-color: rgba(154, 100, 0, 0.3)">0.393</td></tr><tr><td>Rule-9</td><td style="background-color: rgba(160, 94, 0, 0.3)">0.369</td></tr><tr><td>Rule-4</td><td style="background-color: rgba(183, 71, 0, 0.3)">0.281</td></tr><tr><td>Rule-7</td><td style="background-color: rgba(187, 67, 0, 0.3)">0.266</td></tr><tr><td>Rule-15</td><td style="background-color: rgba(189, 65, 0, 0.3)">0.256</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(191, 63, 0, 0.3)">0.250</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(193, 61, 0, 0.3)">0.242</td></tr><tr><td>Rule-0</td><td style="background-color: rgba(193, 61, 0, 0.3)">0.239</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!pitt.edu!joe13
+From: joe13+@pitt.edu (Joseph B Stiehm)
+Newsgroups: rec.sport.hockey
+Subject: Re: Lemieux's Getting the Hart... Jeez I hope not!
+Message-ID: <9863@blue.cis.pitt.edu>
+Date: 23 Apr 93 20:32:22 GMT
+References: <22APR93.02956996.0062@UNBVM1.CSD.UNB.CA>
+Sender: news+@pitt.edu
+Organization: University of Pittsburgh
+Lines: 32
+
+In article <22APR93.02956996.0062@UNBVM1.CSD.UNB.CA> F1HH@UNB.CA (Patrick Walker) writes:
+>Who should get the Hart?
+...
+>Mario.  Jesus NO!  It's bad enough for me just to utter the word
+> without being extremely sick and pissed off.  They guy's a luber
+...
+>ten minutes now... Give me a f--king break with this Mario is the
+>best player ever.  What!  Did Gretzky die?  I wish Bobby Clarke
+...
+>Not that I condone violence, but I'll make an exception for Mario.
+>But if Mario is going to complain about being hit, someone should
+>give him and Scotty something REAL to complain about.
+>Sorry to ramble.  As you can see I hate Mario.
+>Pat Walker
+>UNB
+
+	"Why don't you kill him Beav"
+
+	"Well...I dunnow Eddie...I might get in trouble"
+
+	"Here's a gun Beav, shoot him, Beav"
+
+	"Well...ok Eddie"
+
+BLAM BLAM
+
+	Wally: "You're in trouble now Beave"
+
+
+
+
+
+</div><div class="prediction">Predicted Label: <strong>rec.sport.hockey</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-0</td><td style="background-color: rgba(0, 254, 0, 0.3)">1.000</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(27, 227, 0, 0.3)">0.890</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(195, 59, 0, 0.3)">0.232</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(219, 35, 0, 0.3)">0.140</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(241, 13, 0, 0.3)">0.051</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-16</td><td style="background-color: rgba(200, 54, 0, 0.3)">0.215</td></tr><tr><td>Rule-19</td><td style="background-color: rgba(224, 30, 0, 0.3)">0.118</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Text Sample</div>
+                    <div class="section-content"><div class="sample"><div class="text">Newsgroups: cmu.cs.general
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!altmann@PLEURO.SOAR.CS.CMU.EDU
+From: altmann@PLEURO.SOAR.CS.CMU.EDU (Erik Altmann)
+Subject: Fwd: PROGRESSIVES HAPPY HOUR
+Message-ID: <C554y3.KC1.1@cs.cmu.edu>
+Sender: news+@cs.cmu.edu
+Original-To: bb-general@CS.CMU.EDU
+Organization: School of Computer Science, Carnegie Mellon
+Distribution: cmu
+Date: Thu, 8 Apr 1993 01:13:08 GMT
+Approved: bboard-news_gateway
+Lines: 21
+
+
+
+--------- Forwarding begins here ---------
+
+Date: Wed,  7 Apr 1993 15:39:55 -0400 (EDT)
+From: Women's Center <women+@andrew.cmu.edu>
+To: +dist+/afs/andrew.cmu.edu/usr0/women/dlists/happyhour-announce.dl@andrew.cmu.edu
+Subject: PROGRESSIVES HAPPY HOUR
+
+Enjoy good food and interesting company at the Progressives Happy Hour,
+Thursday 8 April, starting at 5:30pm at the Women's Center (located next
+to the laundromat in the Margaret Morrison Plaza).  Kosher for Passover
+food will be served.  All are welcome.
+
+(Good things to drink will be there, but paper cups won't.  Please  be
+progressive and bring a cup or mug with you.)
+
+Co-sponsored by the Student Government President and funded by the
+student activites fee.
+
+----------- End of forwarding -----------
+</div><div class="prediction">Predicted Label: <strong>comp.windows.x</strong></div><div class="concepts"><h4>Detected Concepts:</h4><table><tr><th>Concept</th><th>Probability</th></tr><tr><td>Concept-27</td><td style="background-color: rgba(25, 229, 0, 0.3)">0.902</td></tr><tr><td>Concept-40</td><td style="background-color: rgba(30, 224, 0, 0.3)">0.881</td></tr><tr><td>Concept-22</td><td style="background-color: rgba(56, 198, 0, 0.3)">0.777</td></tr><tr><td>Concept-24</td><td style="background-color: rgba(68, 186, 0, 0.3)">0.731</td></tr><tr><td>Concept-45</td><td style="background-color: rgba(87, 167, 0, 0.3)">0.658</td></tr><tr><td>Concept-32</td><td style="background-color: rgba(91, 163, 0, 0.3)">0.640</td></tr><tr><td>Concept-34</td><td style="background-color: rgba(97, 157, 0, 0.3)">0.618</td></tr><tr><td>Concept-9</td><td style="background-color: rgba(99, 155, 0, 0.3)">0.611</td></tr><tr><td>Concept-23</td><td style="background-color: rgba(103, 151, 0, 0.3)">0.593</td></tr><tr><td>Concept-14</td><td style="background-color: rgba(104, 150, 0, 0.3)">0.589</td></tr><tr><td>Concept-49</td><td style="background-color: rgba(109, 145, 0, 0.3)">0.570</td></tr><tr><td>Concept-26</td><td style="background-color: rgba(110, 144, 0, 0.3)">0.565</td></tr><tr><td>Concept-37</td><td style="background-color: rgba(113, 141, 0, 0.3)">0.554</td></tr><tr><td>Concept-38</td><td style="background-color: rgba(115, 139, 0, 0.3)">0.546</td></tr><tr><td>Concept-43</td><td style="background-color: rgba(118, 136, 0, 0.3)">0.537</td></tr><tr><td>Concept-7</td><td style="background-color: rgba(119, 135, 0, 0.3)">0.532</td></tr><tr><td>Concept-33</td><td style="background-color: rgba(120, 134, 0, 0.3)">0.526</td></tr><tr><td>Concept-21</td><td style="background-color: rgba(121, 133, 0, 0.3)">0.523</td></tr><tr><td>Concept-20</td><td style="background-color: rgba(122, 132, 0, 0.3)">0.521</td></tr><tr><td>Concept-4</td><td style="background-color: rgba(124, 130, 0, 0.3)">0.513</td></tr><tr><td>Concept-18</td><td style="background-color: rgba(126, 128, 0, 0.3)">0.503</td></tr><tr><td>Concept-31</td><td style="background-color: rgba(128, 126, 0, 0.3)">0.495</td></tr><tr><td>Concept-28</td><td style="background-color: rgba(128, 126, 0, 0.3)">0.494</td></tr><tr><td>Concept-25</td><td style="background-color: rgba(129, 125, 0, 0.3)">0.491</td></tr><tr><td>Concept-1</td><td style="background-color: rgba(131, 123, 0, 0.3)">0.483</td></tr><tr><td>Concept-39</td><td style="background-color: rgba(133, 121, 0, 0.3)">0.477</td></tr><tr><td>Concept-35</td><td style="background-color: rgba(134, 120, 0, 0.3)">0.471</td></tr><tr><td>Concept-10</td><td style="background-color: rgba(135, 119, 0, 0.3)">0.467</td></tr><tr><td>Concept-6</td><td style="background-color: rgba(136, 118, 0, 0.3)">0.464</td></tr><tr><td>Concept-16</td><td style="background-color: rgba(143, 111, 0, 0.3)">0.435</td></tr><tr><td>Concept-5</td><td style="background-color: rgba(151, 103, 0, 0.3)">0.406</td></tr><tr><td>Concept-0</td><td style="background-color: rgba(156, 98, 0, 0.3)">0.387</td></tr><tr><td>Concept-47</td><td style="background-color: rgba(164, 90, 0, 0.3)">0.354</td></tr><tr><td>Concept-46</td><td style="background-color: rgba(166, 88, 0, 0.3)">0.348</td></tr><tr><td>Concept-13</td><td style="background-color: rgba(166, 88, 0, 0.3)">0.348</td></tr><tr><td>Concept-44</td><td style="background-color: rgba(169, 85, 0, 0.3)">0.335</td></tr><tr><td>Concept-2</td><td style="background-color: rgba(173, 81, 0, 0.3)">0.321</td></tr><tr><td>Concept-17</td><td style="background-color: rgba(174, 80, 0, 0.3)">0.317</td></tr><tr><td>Concept-29</td><td style="background-color: rgba(175, 79, 0, 0.3)">0.311</td></tr><tr><td>Concept-41</td><td style="background-color: rgba(176, 78, 0, 0.3)">0.308</td></tr><tr><td>Concept-36</td><td style="background-color: rgba(176, 78, 0, 0.3)">0.308</td></tr><tr><td>Concept-8</td><td style="background-color: rgba(176, 78, 0, 0.3)">0.307</td></tr><tr><td>Concept-48</td><td style="background-color: rgba(177, 77, 0, 0.3)">0.304</td></tr><tr><td>Concept-3</td><td style="background-color: rgba(179, 75, 0, 0.3)">0.298</td></tr><tr><td>Concept-11</td><td style="background-color: rgba(179, 75, 0, 0.3)">0.294</td></tr><tr><td>Concept-30</td><td style="background-color: rgba(193, 61, 0, 0.3)">0.241</td></tr><tr><td>Concept-12</td><td style="background-color: rgba(193, 61, 0, 0.3)">0.240</td></tr><tr><td>Concept-19</td><td style="background-color: rgba(196, 58, 0, 0.3)">0.229</td></tr><tr><td>Concept-15</td><td style="background-color: rgba(204, 50, 0, 0.3)">0.197</td></tr><tr><td>Concept-42</td><td style="background-color: rgba(208, 46, 0, 0.3)">0.184</td></tr></table></div><div class="rules"><h4>Rule Activations:</h4><table><tr><th>Rule</th><th>Activation</th></tr><tr><td>Rule-6</td><td style="background-color: rgba(-134, 389, 0, 0.3)">1.528</td></tr><tr><td>Rule-9</td><td style="background-color: rgba(71, 183, 0, 0.3)">0.720</td></tr><tr><td>Rule-18</td><td style="background-color: rgba(79, 175, 0, 0.3)">0.688</td></tr><tr><td>Rule-7</td><td style="background-color: rgba(97, 157, 0, 0.3)">0.617</td></tr><tr><td>Rule-8</td><td style="background-color: rgba(112, 142, 0, 0.3)">0.559</td></tr><tr><td>Rule-4</td><td style="background-color: rgba(112, 142, 0, 0.3)">0.557</td></tr><tr><td>Rule-0</td><td style="background-color: rgba(125, 129, 0, 0.3)">0.506</td></tr><tr><td>Rule-5</td><td style="background-color: rgba(190, 64, 0, 0.3)">0.253</td></tr><tr><td>Rule-1</td><td style="background-color: rgba(207, 47, 0, 0.3)">0.186</td></tr></table></div></div></div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">Rule Analysis</div>
+                    <div class="section-content"><div class="rule-analysis"><h4>Rule Analysis:</h4><table><tr><th>Rule</th></tr><tr><th>Rule-0</th><td style="background-color: rgba(0, 0, 58, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 30, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 49, 0.3)">-0.19</td><td style="background-color: rgba(23, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(59, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 24, 0.3)">-0.10</td><td style="background-color: rgba(33, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 54, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 28, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 28, 0.3)">-0.11</td><td style="background-color: rgba(62, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.26</td><td style="background-color: rgba(47, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(59, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(77, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(0, 0, 2, 0.3)">-0.01</td><td style="background-color: rgba(54, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(34, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(44, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(11, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(49, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(13, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(0, 0, 69, 0.3)">-0.27</td><td style="background-color: rgba(14, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 27, 0.3)">-0.11</td><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(16, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(5, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(21, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 28, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 6, 0.3)">-0.03</td><td style="background-color: rgba(59, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 49, 0.3)">-0.19</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 19, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 1, 0.3)">-0.01</td><td style="background-color: rgba(0, 0, 9, 0.3)">-0.04</td><td style="background-color: rgba(79, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(0, 0, 58, 0.3)">-0.23</td><td style="background-color: rgba(24, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(0, 0, 2, 0.3)">-0.01</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td></tr><tr><th>Rule-1</th><td style="background-color: rgba(0, 0, 52, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 7, 0.3)">-0.03</td><td style="background-color: rgba(0, 0, 45, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(0, 0, 42, 0.3)">-0.17</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 71, 0.3)">-0.28</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 50, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 55, 0.3)">-0.22</td><td style="background-color: rgba(81, 0, 0, 0.3)">0.32</td><td style="background-color: rgba(47, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 43, 0.3)">-0.17</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(46, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(0, 0, 10, 0.3)">-0.04</td><td style="background-color: rgba(42, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 6, 0.3)">-0.02</td><td style="background-color: rgba(0, 0, 49, 0.3)">-0.20</td><td style="background-color: rgba(53, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(0, 0, 19, 0.3)">-0.07</td><td style="background-color: rgba(38, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(3, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(78, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(0, 0, 34, 0.3)">-0.14</td><td style="background-color: rgba(47, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(53, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(0, 0, 61, 0.3)">-0.24</td><td style="background-color: rgba(0, 0, 72, 0.3)">-0.29</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(0, 0, 33, 0.3)">-0.13</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 68, 0.3)">-0.27</td><td style="background-color: rgba(23, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(22, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 45, 0.3)">-0.18</td></tr><tr><th>Rule-2</th><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 27, 0.3)">-0.11</td><td style="background-color: rgba(38, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 74, 0.3)">-0.29</td><td style="background-color: rgba(70, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(68, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 25, 0.3)">-0.10</td><td style="background-color: rgba(46, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(74, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(55, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(37, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 62, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 12, 0.3)">-0.05</td><td style="background-color: rgba(31, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 23, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 22, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 11, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 41, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 6, 0.3)">-0.03</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(27, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(4, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 44, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 37, 0.3)">-0.15</td><td style="background-color: rgba(4, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(24, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 44, 0.3)">-0.17</td><td style="background-color: rgba(36, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(16, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 11, 0.3)">-0.05</td><td style="background-color: rgba(74, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(0, 0, 76, 0.3)">-0.30</td><td style="background-color: rgba(37, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 73, 0.3)">-0.29</td><td style="background-color: rgba(0, 0, 0, 0.3)">-0.00</td><td style="background-color: rgba(74, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(0, 0, 58, 0.3)">-0.23</td></tr><tr><th>Rule-3</th><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(55, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(13, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 74, 0.3)">-0.29</td><td style="background-color: rgba(15, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 72, 0.3)">-0.28</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 78, 0.3)">-0.31</td><td style="background-color: rgba(40, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(36, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(53, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(35, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(0, 0, 47, 0.3)">-0.19</td><td style="background-color: rgba(30, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.10</td><td style="background-color: rgba(46, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(0, 0, 42, 0.3)">-0.17</td><td style="background-color: rgba(0, 0, 10, 0.3)">-0.04</td><td style="background-color: rgba(0, 0, 60, 0.3)">-0.24</td><td style="background-color: rgba(0, 0, 54, 0.3)">-0.21</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 18, 0.3)">-0.07</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(32, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(51, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(4, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(62, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(12, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(0, 0, 41, 0.3)">-0.16</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(0, 0, 76, 0.3)">-0.30</td><td style="background-color: rgba(40, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(0, 0, 10, 0.3)">-0.04</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 7, 0.3)">-0.03</td><td style="background-color: rgba(0, 0, 8, 0.3)">-0.03</td><td style="background-color: rgba(0, 0, 30, 0.3)">-0.12</td><td style="background-color: rgba(54, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(49, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 1, 0.3)">-0.01</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 23, 0.3)">-0.09</td></tr><tr><th>Rule-4</th><td style="background-color: rgba(0, 0, 58, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 56, 0.3)">-0.22</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 71, 0.3)">-0.28</td><td style="background-color: rgba(0, 0, 44, 0.3)">-0.17</td><td style="background-color: rgba(71, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(0, 0, 64, 0.3)">-0.25</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(73, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(60, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 69, 0.3)">-0.27</td><td style="background-color: rgba(52, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(37, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(78, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(11, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(72, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(38, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(59, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(44, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(9, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(0, 0, 50, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 62, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 68, 0.3)">-0.27</td><td style="background-color: rgba(31, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(0, 0, 43, 0.3)">-0.17</td><td style="background-color: rgba(0, 0, 36, 0.3)">-0.14</td><td style="background-color: rgba(0, 0, 69, 0.3)">-0.27</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(15, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 43, 0.3)">-0.17</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.15</td><td style="background-color: rgba(28, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(53, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 11, 0.3)">-0.05</td><td style="background-color: rgba(70, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(0, 0, 24, 0.3)">-0.10</td><td style="background-color: rgba(77, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(79, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.11</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(6, 0, 0, 0.3)">0.03</td></tr><tr><th>Rule-5</th><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 7, 0.3)">-0.03</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(15, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 35, 0.3)">-0.14</td><td style="background-color: rgba(36, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(9, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(61, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 43, 0.3)">-0.17</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(2, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(38, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 13, 0.3)">-0.05</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 54, 0.3)">-0.22</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 34, 0.3)">-0.14</td><td style="background-color: rgba(5, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(0, 0, 13, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(13, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 34, 0.3)">-0.14</td><td style="background-color: rgba(21, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 70, 0.3)">-0.28</td><td style="background-color: rgba(0, 0, 60, 0.3)">-0.24</td><td style="background-color: rgba(0, 0, 17, 0.3)">-0.07</td><td style="background-color: rgba(66, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(69, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(0, 0, 18, 0.3)">-0.07</td><td style="background-color: rgba(0, 0, 56, 0.3)">-0.22</td><td style="background-color: rgba(5, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(0, 0, 8, 0.3)">-0.03</td><td style="background-color: rgba(42, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(52, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 50, 0.3)">-0.20</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(33, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(70, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 72, 0.3)">-0.28</td></tr><tr><th>Rule-6</th><td style="background-color: rgba(44, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(46, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(68, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(73, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(9, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(0, 0, 31, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 31, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 49, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(66, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(10, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(40, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(32, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(0, 0, 24, 0.3)">-0.09</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(16, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 16, 0.3)">-0.06</td><td style="background-color: rgba(23, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(41, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(35, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(51, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(60, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 31, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 5, 0.3)">-0.02</td><td style="background-color: rgba(47, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 57, 0.3)">-0.22</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(27, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(30, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 30, 0.3)">-0.12</td><td style="background-color: rgba(41, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(60, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(78, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(0, 0, 0, 0.3)">-0.00</td><td style="background-color: rgba(0, 0, 5, 0.3)">-0.02</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(35, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(47, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 18, 0.3)">-0.07</td><td style="background-color: rgba(26, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 43, 0.3)">-0.17</td><td style="background-color: rgba(0, 0, 58, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(77, 0, 0, 0.3)">0.30</td></tr><tr><th>Rule-7</th><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 44, 0.3)">-0.18</td><td style="background-color: rgba(8, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 30, 0.3)">-0.12</td><td style="background-color: rgba(59, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(34, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(78, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(76, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(0, 0, 60, 0.3)">-0.24</td><td style="background-color: rgba(0, 0, 41, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 40, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 40, 0.3)">-0.16</td><td style="background-color: rgba(31, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(32, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(0, 0, 75, 0.3)">-0.30</td><td style="background-color: rgba(15, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.10</td><td style="background-color: rgba(22, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(64, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 13, 0.3)">-0.05</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(31, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.10</td><td style="background-color: rgba(0, 0, 28, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 41, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 3, 0.3)">-0.01</td><td style="background-color: rgba(35, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(0, 0, 44, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 16, 0.3)">-0.06</td><td style="background-color: rgba(47, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 40, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 17, 0.3)">-0.07</td><td style="background-color: rgba(0, 0, 68, 0.3)">-0.27</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(62, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 10, 0.3)">-0.04</td><td style="background-color: rgba(0, 0, 64, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.16</td><td style="background-color: rgba(67, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(61, 0, 0, 0.3)">0.24</td></tr><tr><th>Rule-8</th><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(44, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(68, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(74, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(11, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(38, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 19, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 33, 0.3)">-0.13</td><td style="background-color: rgba(32, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(35, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(74, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(0, 0, 47, 0.3)">-0.19</td><td style="background-color: rgba(79, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 64, 0.3)">-0.25</td><td style="background-color: rgba(70, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(54, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(10, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(0, 0, 3, 0.3)">-0.01</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(21, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(29, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.15</td><td style="background-color: rgba(34, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(15, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 49, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 9, 0.3)">-0.04</td><td style="background-color: rgba(0, 0, 13, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.10</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 44, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 42, 0.3)">-0.17</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.15</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(24, 0, 0, 0.3)">0.09</td></tr><tr><th>Rule-9</th><td style="background-color: rgba(0, 0, 73, 0.3)">-0.29</td><td style="background-color: rgba(8, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 50, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 25, 0.3)">-0.10</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(64, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(36, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(0, 0, 78, 0.3)">-0.31</td><td style="background-color: rgba(74, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(0, 0, 58, 0.3)">-0.23</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(41, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(75, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.12</td><td style="background-color: rgba(61, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(2, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(5, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.27</td><td style="background-color: rgba(20, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(51, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.27</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(0, 0, 32, 0.3)">-0.13</td><td style="background-color: rgba(0, 0, 41, 0.3)">-0.16</td><td style="background-color: rgba(61, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(70, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(14, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.15</td><td style="background-color: rgba(21, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(0, 0, 40, 0.3)">-0.16</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(0, 0, 0, 0.3)">-0.00</td><td style="background-color: rgba(73, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(51, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 73, 0.3)">-0.29</td><td style="background-color: rgba(5, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 33, 0.3)">-0.13</td><td style="background-color: rgba(0, 0, 9, 0.3)">-0.04</td></tr><tr><th>Rule-10</th><td style="background-color: rgba(0, 0, 44, 0.3)">-0.17</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.15</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.16</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(6, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(23, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(66, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 12, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 32, 0.3)">-0.13</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 33, 0.3)">-0.13</td><td style="background-color: rgba(23, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(68, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(0, 0, 16, 0.3)">-0.07</td><td style="background-color: rgba(0, 0, 25, 0.3)">-0.10</td><td style="background-color: rgba(44, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 36, 0.3)">-0.14</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.12</td><td style="background-color: rgba(71, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(75, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(0, 0, 10, 0.3)">-0.04</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.11</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(15, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(11, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(55, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.10</td><td style="background-color: rgba(26, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(1, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.26</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.10</td><td style="background-color: rgba(6, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(14, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(0, 0, 31, 0.3)">-0.12</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 61, 0.3)">-0.24</td><td style="background-color: rgba(5, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(0, 0, 24, 0.3)">-0.09</td></tr><tr><th>Rule-11</th><td style="background-color: rgba(0, 0, 21, 0.3)">-0.09</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 64, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 9, 0.3)">-0.04</td><td style="background-color: rgba(0, 0, 68, 0.3)">-0.27</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(61, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.27</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 62, 0.3)">-0.24</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(4, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(64, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(51, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(30, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 0, 0.3)">-0.00</td><td style="background-color: rgba(64, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.12</td><td style="background-color: rgba(64, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.27</td><td style="background-color: rgba(0, 0, 56, 0.3)">-0.22</td><td style="background-color: rgba(69, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 55, 0.3)">-0.22</td><td style="background-color: rgba(73, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.11</td><td style="background-color: rgba(23, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(0, 0, 30, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 45, 0.3)">-0.18</td><td style="background-color: rgba(37, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.24</td><td style="background-color: rgba(0, 0, 56, 0.3)">-0.22</td><td style="background-color: rgba(0, 0, 61, 0.3)">-0.24</td><td style="background-color: rgba(24, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(0, 0, 78, 0.3)">-0.31</td><td style="background-color: rgba(71, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(53, 0, 0, 0.3)">0.21</td></tr><tr><th>Rule-12</th><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 3, 0.3)">-0.01</td><td style="background-color: rgba(47, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(31, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(22, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(0, 0, 28, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 52, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 57, 0.3)">-0.23</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(28, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(16, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 23, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 28, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.27</td><td style="background-color: rgba(61, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 37, 0.3)">-0.15</td><td style="background-color: rgba(0, 0, 13, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 71, 0.3)">-0.28</td><td style="background-color: rgba(0, 0, 22, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 0, 0.3)">-0.00</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(22, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(32, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(47, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 65, 0.3)">-0.26</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 66, 0.3)">-0.26</td><td style="background-color: rgba(71, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(66, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(6, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(66, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(66, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.10</td><td style="background-color: rgba(0, 0, 49, 0.3)">-0.19</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(11, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(0, 0, 65, 0.3)">-0.26</td><td style="background-color: rgba(30, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(14, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(3, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(33, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(5, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td></tr><tr><th>Rule-13</th><td style="background-color: rgba(0, 0, 71, 0.3)">-0.28</td><td style="background-color: rgba(38, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 23, 0.3)">-0.09</td><td style="background-color: rgba(46, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(0, 0, 49, 0.3)">-0.20</td><td style="background-color: rgba(77, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.11</td><td style="background-color: rgba(38, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.15</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 39, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 33, 0.3)">-0.13</td><td style="background-color: rgba(0, 0, 24, 0.3)">-0.10</td><td style="background-color: rgba(0, 0, 40, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 70, 0.3)">-0.28</td><td style="background-color: rgba(0, 0, 1, 0.3)">-0.01</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(59, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(4, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(0, 0, 55, 0.3)">-0.22</td><td style="background-color: rgba(0, 0, 7, 0.3)">-0.03</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(2, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(0, 0, 55, 0.3)">-0.22</td><td style="background-color: rgba(0, 0, 55, 0.3)">-0.22</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 27, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 70, 0.3)">-0.28</td><td style="background-color: rgba(71, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(0, 0, 36, 0.3)">-0.14</td><td style="background-color: rgba(0, 0, 45, 0.3)">-0.18</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(0, 0, 8, 0.3)">-0.03</td><td style="background-color: rgba(67, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 65, 0.3)">-0.26</td><td style="background-color: rgba(60, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(12, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(0, 0, 25, 0.3)">-0.10</td><td style="background-color: rgba(30, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(28, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 47, 0.3)">-0.19</td><td style="background-color: rgba(8, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(4, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(29, 0, 0, 0.3)">0.12</td></tr><tr><th>Rule-14</th><td style="background-color: rgba(20, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 54, 0.3)">-0.21</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(14, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 54, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(24, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(44, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 42, 0.3)">-0.17</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 12, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(67, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(36, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 35, 0.3)">-0.14</td><td style="background-color: rgba(0, 0, 49, 0.3)">-0.19</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.11</td><td style="background-color: rgba(64, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 34, 0.3)">-0.14</td><td style="background-color: rgba(0, 0, 36, 0.3)">-0.14</td><td style="background-color: rgba(0, 0, 73, 0.3)">-0.29</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(29, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(0, 0, 24, 0.3)">-0.10</td><td style="background-color: rgba(0, 0, 18, 0.3)">-0.07</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 12, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(37, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(73, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 6, 0.3)">-0.03</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.08</td><td style="background-color: rgba(35, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(67, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(6, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(71, 0, 0, 0.3)">0.28</td></tr><tr><th>Rule-15</th><td style="background-color: rgba(28, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 33, 0.3)">-0.13</td><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 9, 0.3)">-0.04</td><td style="background-color: rgba(30, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(0, 0, 71, 0.3)">-0.28</td><td style="background-color: rgba(61, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.26</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 44, 0.3)">-0.17</td><td style="background-color: rgba(0, 0, 42, 0.3)">-0.17</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 6, 0.3)">-0.03</td><td style="background-color: rgba(52, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 5, 0.3)">-0.02</td><td style="background-color: rgba(75, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(21, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(59, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(33, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 35, 0.3)">-0.14</td><td style="background-color: rgba(27, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(39, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(0, 0, 63, 0.3)">-0.25</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(0, 0, 64, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 68, 0.3)">-0.27</td><td style="background-color: rgba(8, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 22, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 64, 0.3)">-0.25</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(5, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(40, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(0, 0, 72, 0.3)">-0.28</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(40, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(37, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 50, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 1, 0.3)">-0.01</td><td style="background-color: rgba(0, 0, 58, 0.3)">-0.23</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(68, 0, 0, 0.3)">0.27</td></tr><tr><th>Rule-16</th><td style="background-color: rgba(0, 0, 16, 0.3)">-0.07</td><td style="background-color: rgba(0, 0, 55, 0.3)">-0.22</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(0, 0, 62, 0.3)">-0.24</td><td style="background-color: rgba(61, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 36, 0.3)">-0.14</td><td style="background-color: rgba(49, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 55, 0.3)">-0.22</td><td style="background-color: rgba(0, 0, 2, 0.3)">-0.01</td><td style="background-color: rgba(4, 0, 0, 0.3)">0.02</td><td style="background-color: rgba(0, 0, 72, 0.3)">-0.29</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(73, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(42, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(23, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(0, 0, 34, 0.3)">-0.14</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 70, 0.3)">-0.28</td><td style="background-color: rgba(26, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(67, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(27, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(21, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(15, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 62, 0.3)">-0.25</td><td style="background-color: rgba(16, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 55, 0.3)">-0.22</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(60, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(13, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 27, 0.3)">-0.11</td><td style="background-color: rgba(14, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 0, 0.3)">-0.00</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(0, 0, 29, 0.3)">-0.12</td><td style="background-color: rgba(29, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(18, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.10</td><td style="background-color: rgba(66, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(60, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(75, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(20, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 71, 0.3)">-0.28</td><td style="background-color: rgba(64, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 57, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(9, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(0, 0, 47, 0.3)">-0.19</td></tr><tr><th>Rule-17</th><td style="background-color: rgba(0, 0, 44, 0.3)">-0.17</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(52, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 46, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 28, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 57, 0.3)">-0.22</td><td style="background-color: rgba(46, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(0, 0, 69, 0.3)">-0.27</td><td style="background-color: rgba(76, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(69, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(0, 0, 69, 0.3)">-0.27</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(0, 0, 47, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 40, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(0, 0, 45, 0.3)">-0.18</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(63, 0, 0, 0.3)">0.25</td><td style="background-color: rgba(0, 0, 7, 0.3)">-0.03</td><td style="background-color: rgba(75, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(0, 0, 4, 0.3)">-0.02</td><td style="background-color: rgba(0, 0, 7, 0.3)">-0.03</td><td style="background-color: rgba(78, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(41, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(0, 0, 34, 0.3)">-0.14</td><td style="background-color: rgba(0, 0, 1, 0.3)">-0.01</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 26, 0.3)">-0.11</td><td style="background-color: rgba(67, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(0, 0, 44, 0.3)">-0.18</td><td style="background-color: rgba(0, 0, 12, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 61, 0.3)">-0.24</td><td style="background-color: rgba(38, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(40, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(0, 0, 32, 0.3)">-0.13</td><td style="background-color: rgba(0, 0, 52, 0.3)">-0.21</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 65, 0.3)">-0.26</td><td style="background-color: rgba(45, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 48, 0.3)">-0.19</td><td style="background-color: rgba(52, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(25, 0, 0, 0.3)">0.10</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(0, 0, 27, 0.3)">-0.11</td><td style="background-color: rgba(0, 0, 18, 0.3)">-0.07</td><td style="background-color: rgba(33, 0, 0, 0.3)">0.13</td></tr><tr><th>Rule-18</th><td style="background-color: rgba(0, 0, 14, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(53, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.08</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(75, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(17, 0, 0, 0.3)">0.07</td><td style="background-color: rgba(3, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(0, 0, 21, 0.3)">-0.08</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 19, 0.3)">-0.08</td><td style="background-color: rgba(62, 0, 0, 0.3)">0.24</td><td style="background-color: rgba(75, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(0, 0, 18, 0.3)">-0.07</td><td style="background-color: rgba(8, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(0, 0, 64, 0.3)">-0.25</td><td style="background-color: rgba(0, 0, 70, 0.3)">-0.28</td><td style="background-color: rgba(0, 0, 22, 0.3)">-0.09</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(0, 0, 12, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.26</td><td style="background-color: rgba(13, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(2, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(0, 0, 24, 0.3)">-0.09</td><td style="background-color: rgba(0, 0, 9, 0.3)">-0.04</td><td style="background-color: rgba(22, 0, 0, 0.3)">0.09</td><td style="background-color: rgba(50, 0, 0, 0.3)">0.20</td><td style="background-color: rgba(0, 0, 72, 0.3)">-0.29</td><td style="background-color: rgba(13, 0, 0, 0.3)">0.05</td><td style="background-color: rgba(0, 0, 31, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 58, 0.3)">-0.23</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(75, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(0, 0, 41, 0.3)">-0.16</td><td style="background-color: rgba(30, 0, 0, 0.3)">0.12</td><td style="background-color: rgba(46, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(7, 0, 0, 0.3)">0.03</td><td style="background-color: rgba(72, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(0, 0, 50, 0.3)">-0.20</td><td style="background-color: rgba(44, 0, 0, 0.3)">0.18</td><td style="background-color: rgba(19, 0, 0, 0.3)">0.08</td><td style="background-color: rgba(0, 0, 72, 0.3)">-0.28</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 23, 0.3)">-0.09</td><td style="background-color: rgba(71, 0, 0, 0.3)">0.28</td><td style="background-color: rgba(0, 0, 41, 0.3)">-0.16</td><td style="background-color: rgba(0, 0, 23, 0.3)">-0.09</td><td style="background-color: rgba(33, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(0, 0, 76, 0.3)">-0.30</td></tr><tr><th>Rule-19</th><td style="background-color: rgba(33, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(0, 0, 13, 0.3)">-0.05</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 20, 0.3)">-0.08</td><td style="background-color: rgba(57, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(14, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 70, 0.3)">-0.27</td><td style="background-color: rgba(40, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(1, 0, 0, 0.3)">0.01</td><td style="background-color: rgba(0, 0, 38, 0.3)">-0.15</td><td style="background-color: rgba(0, 0, 51, 0.3)">-0.20</td><td style="background-color: rgba(40, 0, 0, 0.3)">0.16</td><td style="background-color: rgba(56, 0, 0, 0.3)">0.22</td><td style="background-color: rgba(10, 0, 0, 0.3)">0.04</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(35, 0, 0, 0.3)">0.14</td><td style="background-color: rgba(58, 0, 0, 0.3)">0.23</td><td style="background-color: rgba(37, 0, 0, 0.3)">0.15</td><td style="background-color: rgba(0, 0, 67, 0.3)">-0.26</td><td style="background-color: rgba(16, 0, 0, 0.3)">0.06</td><td style="background-color: rgba(0, 0, 59, 0.3)">-0.23</td><td style="background-color: rgba(0, 0, 47, 0.3)">-0.19</td><td style="background-color: rgba(0, 0, 22, 0.3)">-0.09</td><td style="background-color: rgba(48, 0, 0, 0.3)">0.19</td><td style="background-color: rgba(68, 0, 0, 0.3)">0.27</td><td style="background-color: rgba(0, 0, 30, 0.3)">-0.12</td><td style="background-color: rgba(0, 0, 50, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 15, 0.3)">-0.06</td><td style="background-color: rgba(65, 0, 0, 0.3)">0.26</td><td style="background-color: rgba(0, 0, 50, 0.3)">-0.20</td><td style="background-color: rgba(0, 0, 53, 0.3)">-0.21</td><td style="background-color: rgba(0, 0, 69, 0.3)">-0.27</td><td style="background-color: rgba(0, 0, 1, 0.3)">-0.01</td><td style="background-color: rgba(0, 0, 10, 0.3)">-0.04</td><td style="background-color: rgba(0, 0, 76, 0.3)">-0.30</td><td style="background-color: rgba(28, 0, 0, 0.3)">0.11</td><td style="background-color: rgba(0, 0, 69, 0.3)">-0.27</td><td style="background-color: rgba(54, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(0, 0, 25, 0.3)">-0.10</td><td style="background-color: rgba(43, 0, 0, 0.3)">0.17</td><td style="background-color: rgba(0, 0, 32, 0.3)">-0.13</td><td style="background-color: rgba(73, 0, 0, 0.3)">0.29</td><td style="background-color: rgba(54, 0, 0, 0.3)">0.21</td><td style="background-color: rgba(76, 0, 0, 0.3)">0.30</td><td style="background-color: rgba(78, 0, 0, 0.3)">0.31</td><td style="background-color: rgba(0, 0, 0, 0.3)">0.00</td><td style="background-color: rgba(32, 0, 0, 0.3)">0.13</td><td style="background-color: rgba(0, 0, 25, 0.3)">-0.10</td><td style="background-color: rgba(0, 0, 23, 0.3)">-0.09</td></tr></table></div></div>
+                </div>
+            
+            </div>
+        </body>
+        </html>
+        

@@ -1,0 +1,3567 @@
+{
+  "Rule-0": {
+    "id": "Rule-0",
+    "bias": 0.016395805403590202,
+    "concepts": [
+      {
+        "concept": "Concept-45",
+        "weight": 0.3131585121154785,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.30286988615989685,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": -0.2721007466316223,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": -0.2630290389060974,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.2488778978586197,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.24884675443172455,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": 0.24516268074512482,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": 0.23496133089065552,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": 0.23490184545516968,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.23329748213291168,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.23136182129383087,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": -0.22840143740177155,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": -0.21410726010799408,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.21404336392879486,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.21046540141105652,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": 0.19708341360092163,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": 0.1943027675151825,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": -0.1939166933298111,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": -0.19276371598243713,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.1857638955116272,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": 0.1769997477531433,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": 0.1750916838645935,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": 0.17173457145690918,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.1555720865726471,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": 0.13623616099357605,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": 0.13255415856838226,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": -0.11999127268791199,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": -0.11328832060098648,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": -0.11213632673025131,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.11146873980760574,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.10713546723127365,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 0: Concept-45 AND Concept-18 AND NOT Concept-27 AND NOT Concept-14 AND Concept-29 AND NOT Concept-16 AND Concept-13 AND Concept-17 AND Concept-39 AND Concept-5 AND NOT Concept-46 AND NOT Concept-0 AND NOT Concept-9 AND Concept-20 AND NOT Concept-4 AND Concept-41 AND Concept-24 AND NOT Concept-40 AND NOT Concept-2 AND Concept-15 AND Concept-49 AND Concept-22 AND Concept-8 AND Concept-25 AND Concept-21 AND Concept-7 AND NOT Concept-1 AND NOT Concept-35 AND NOT Concept-12 AND NOT Concept-11 AND NOT Concept-30"
+  },
+  "Rule-1": {
+    "id": "Rule-1",
+    "bias": -0.0007783742621541023,
+    "concepts": [
+      {
+        "concept": "Concept-16",
+        "weight": 0.3180667459964752,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": 0.30733513832092285,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": -0.28558820486068726,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": -0.2794649004936218,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": -0.26967325806617737,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": 0.24951039254665375,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.24212928116321564,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": -0.23270262777805328,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": 0.22505126893520355,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.22015978395938873,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": -0.21697665750980377,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.20876850187778473,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.20830702781677246,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": -0.2055758684873581,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": 0.19901373982429504,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": -0.19861795008182526,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": -0.1957860291004181,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.1905810385942459,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.19044215977191925,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.18647974729537964,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": 0.18502004444599152,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.18411201238632202,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.18341442942619324,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": -0.18199831247329712,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-33",
+        "weight": 0.1783881038427353,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": -0.1773265153169632,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": -0.17672564089298248,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": 0.17057350277900696,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": -0.16927054524421692,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": 0.1682862490415573,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.16613587737083435,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": 0.15530389547348022,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": 0.1515403538942337,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.1351851522922516,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": -0.1294277161359787,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 1: Concept-16 AND Concept-30 AND NOT Concept-38 AND NOT Concept-6 AND NOT Concept-43 AND Concept-45 AND NOT Concept-37 AND NOT Concept-13 AND Concept-48 AND Concept-40 AND NOT Concept-15 AND Concept-36 AND Concept-25 AND NOT Concept-0 AND Concept-10 AND NOT Concept-8 AND NOT Concept-24 AND Concept-19 AND Concept-42 AND Concept-32 AND Concept-17 AND Concept-20 AND NOT Concept-7 AND NOT Concept-9 AND Concept-33 AND NOT Concept-2 AND NOT Concept-49 AND Concept-14 AND NOT Concept-18 AND Concept-22 AND NOT Concept-4 AND Concept-34 AND Concept-27 AND NOT Concept-31 AND NOT Concept-41"
+  },
+  "Rule-2": {
+    "id": "Rule-2",
+    "bias": 0.009152323007583618,
+    "concepts": [
+      {
+        "concept": "Concept-43",
+        "weight": -0.2985621392726898,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.2926744520664215,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.2915377914905548,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": 0.29134607315063477,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": 0.2910463213920593,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": -0.289894163608551,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.278075635433197,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": 0.2680054008960724,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.257987916469574,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": 0.24886585772037506,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": -0.24810366332530975,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.24660810828208923,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": -0.23374111950397491,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": -0.2330593466758728,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.2322566956281662,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": -0.23141427338123322,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": 0.22947204113006592,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": -0.22866946458816528,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": 0.21641048789024353,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.2096061408519745,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": -0.20243285596370697,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": -0.19121481478214264,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": -0.18846897780895233,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.1829892098903656,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-33",
+        "weight": -0.17612509429454803,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": -0.1739892065525055,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": -0.16352763772010803,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.15448243916034698,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": 0.15040582418441772,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.14816009998321533,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": 0.14702312648296356,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.1468813568353653,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": 0.1450117528438568,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.12373816221952438,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": -0.10828863084316254,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.10696129500865936,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 2: NOT Concept-43 AND NOT Concept-4 AND Concept-42 AND Concept-13 AND Concept-47 AND NOT Concept-45 AND Concept-5 AND Concept-6 AND Concept-19 AND Concept-0 AND NOT Concept-8 AND NOT Concept-16 AND NOT Concept-9 AND NOT Concept-24 AND NOT Concept-28 AND NOT Concept-10 AND Concept-1 AND NOT Concept-49 AND Concept-14 AND NOT Concept-37 AND NOT Concept-32 AND NOT Concept-27 AND NOT Concept-48 AND Concept-12 AND NOT Concept-33 AND NOT Concept-38 AND NOT Concept-23 AND Concept-25 AND Concept-3 AND Concept-15 AND Concept-44 AND NOT Concept-34 AND Concept-39 AND Concept-18 AND NOT Concept-2 AND Concept-29"
+  },
+  "Rule-3": {
+    "id": "Rule-3",
+    "bias": -0.015871472656726837,
+    "concepts": [
+      {
+        "concept": "Concept-10",
+        "weight": -0.3082812428474426,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.2996947169303894,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.2908298671245575,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": -0.28411057591438293,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": 0.24736489355564117,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.2440670281648636,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": -0.23836378753185272,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": 0.22985363006591797,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": 0.2161221206188202,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": 0.2140863984823227,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": -0.2131820172071457,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": 0.20785373449325562,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": 0.20206163823604584,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": -0.20140628516674042,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": 0.19772107899188995,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": 0.19289468228816986,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.1857178807258606,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.18108157813549042,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.1789282262325287,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": -0.16802021861076355,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.1625097393989563,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.15885888040065765,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": 0.1574392318725586,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": 0.15459388494491577,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": -0.15246276557445526,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.14332899451255798,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.13820014894008636,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.1271234154701233,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": 0.11986846476793289,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": -0.11844111233949661,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": -0.11483335494995117,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": -0.10254552960395813,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 3: NOT Concept-10 AND NOT Concept-37 AND NOT Concept-4 AND NOT Concept-8 AND Concept-48 AND Concept-32 AND NOT Concept-23 AND Concept-35 AND Concept-1 AND Concept-44 AND NOT Concept-24 AND Concept-13 AND Concept-30 AND NOT Concept-3 AND Concept-7 AND Concept-46 AND NOT Concept-16 AND Concept-19 AND Concept-20 AND NOT Concept-21 AND NOT Concept-34 AND Concept-38 AND Concept-11 AND Concept-27 AND NOT Concept-6 AND Concept-12 AND Concept-15 AND Concept-29 AND Concept-17 AND NOT Concept-43 AND NOT Concept-40 AND NOT Concept-18"
+  },
+  "Rule-4": {
+    "id": "Rule-4",
+    "bias": 0.0012826093006879091,
+    "concepts": [
+      {
+        "concept": "Concept-45",
+        "weight": 0.31121161580085754,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": 0.307026207447052,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": 0.3043875992298126,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": 0.28668099641799927,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.28462880849838257,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.2817445397377014,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": 0.2810646891593933,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.27536433935165405,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": -0.2728988826274872,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.27063384652137756,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.2668759524822235,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": 0.25823140144348145,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.25531941652297974,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.2518124282360077,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": -0.24703726172447205,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.23821410536766052,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": 0.2349306344985962,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": -0.23032298684120178,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": 0.2287750095129013,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": -0.21963666379451752,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": 0.2098034769296646,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": 0.20596712827682495,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": -0.2009289562702179,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": -0.1986914724111557,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.1964024305343628,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.18404029309749603,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": -0.18273405730724335,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": 0.17687563598155975,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": 0.17435987293720245,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": -0.17294685542583466,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.1714298129081726,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-33",
+        "weight": -0.17118899524211884,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.17108960449695587,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.1549830287694931,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.15119493007659912,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.14596986770629883,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": -0.14242835342884064,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": 0.12173017114400864,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.1146722137928009,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": 0.11277659237384796,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": 0.10104940086603165,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 4: Concept-45 AND Concept-16 AND Concept-44 AND Concept-9 AND Concept-18 AND NOT Concept-4 AND Concept-6 AND Concept-42 AND NOT Concept-13 AND NOT Concept-30 AND NOT Concept-26 AND Concept-10 AND Concept-38 AND NOT Concept-7 AND NOT Concept-25 AND Concept-12 AND Concept-21 AND NOT Concept-0 AND Concept-31 AND NOT Concept-2 AND Concept-39 AND Concept-14 AND NOT Concept-40 AND NOT Concept-24 AND Concept-36 AND NOT Concept-11 AND NOT Concept-48 AND Concept-8 AND Concept-22 AND NOT Concept-5 AND NOT Concept-28 AND NOT Concept-33 AND Concept-19 AND NOT Concept-34 AND Concept-20 AND Concept-15 AND NOT Concept-29 AND Concept-27 AND NOT Concept-46 AND Concept-35 AND Concept-47"
+  },
+  "Rule-5": {
+    "id": "Rule-5",
+    "bias": 0.01761619560420513,
+    "concepts": [
+      {
+        "concept": "Concept-49",
+        "weight": -0.28459957242012024,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.2783980369567871,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": 0.2768988609313965,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": 0.2740916907787323,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-33",
+        "weight": 0.2618125379085541,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": 0.24050629138946533,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.23653383553028107,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.23074448108673096,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": 0.2257569283246994,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": -0.22284328937530518,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": -0.21513277292251587,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": -0.21127189695835114,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": -0.21067486703395844,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.20616385340690613,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": 0.19669793546199799,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": -0.1962844580411911,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": 0.17140668630599976,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": -0.17004838585853577,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": 0.16502219438552856,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.15282121300697327,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.15071991086006165,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": -0.14904475212097168,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.1427609920501709,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.13815400004386902,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.137030690908432,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": -0.13535381853580475,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": 0.13050349056720734,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.11533655971288681,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": -0.1148253083229065,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": 0.10192963480949402,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": 0.10140945017337799,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 5: NOT Concept-49 AND NOT Concept-30 AND Concept-47 AND Concept-34 AND Concept-33 AND Concept-7 AND NOT Concept-31 AND Concept-18 AND Concept-14 AND NOT Concept-36 AND NOT Concept-17 AND NOT Concept-10 AND NOT Concept-15 AND Concept-40 AND Concept-41 AND NOT Concept-43 AND Concept-48 AND NOT Concept-8 AND Concept-39 AND Concept-12 AND NOT Concept-46 AND NOT Concept-22 AND Concept-5 AND NOT Concept-4 AND NOT Concept-28 AND NOT Concept-19 AND Concept-45 AND NOT Concept-16 AND NOT Concept-42 AND Concept-23 AND Concept-2"
+  },
+  "Rule-6": {
+    "id": "Rule-6",
+    "bias": 0.0037132303696125746,
+    "concepts": [
+      {
+        "concept": "Concept-36",
+        "weight": 0.30723467469215393,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": 0.3023800849914551,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": 0.29018139839172363,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": 0.2678697109222412,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": 0.262280136346817,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.2502495050430298,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": 0.2382611632347107,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": 0.23547665774822235,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": -0.2295984923839569,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.22362108528614044,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.2224723994731903,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": 0.2010388970375061,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.1952836960554123,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": -0.1918947994709015,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": -0.1911432445049286,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.1910979002714157,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": 0.18611137568950653,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.18527524173259735,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": 0.18120034039020538,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": 0.17419110238552094,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.1703634262084961,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.16895855963230133,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.16370950639247894,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": 0.16219744086265564,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.1583574414253235,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": 0.13791261613368988,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.13738511502742767,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": 0.1283818632364273,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": -0.12444252520799637,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": -0.12270073592662811,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": -0.12262237817049026,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-33",
+        "weight": -0.1215137466788292,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": 0.11983683705329895,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": 0.10759875923395157,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": 0.1032043918967247,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 6: Concept-36 AND Concept-49 AND Concept-3 AND Concept-2 AND Concept-9 AND Concept-25 AND Concept-22 AND Concept-35 AND NOT Concept-47 AND NOT Concept-28 AND Concept-29 AND Concept-21 AND NOT Concept-7 AND NOT Concept-10 AND NOT Concept-48 AND Concept-32 AND Concept-27 AND Concept-42 AND Concept-1 AND Concept-0 AND Concept-40 AND NOT Concept-46 AND Concept-19 AND Concept-34 AND Concept-12 AND Concept-41 AND Concept-20 AND Concept-13 AND NOT Concept-6 AND NOT Concept-5 AND NOT Concept-23 AND NOT Concept-33 AND Concept-31 AND Concept-30 AND Concept-44"
+  },
+  "Rule-7": {
+    "id": "Rule-7",
+    "bias": 0.005455926991999149,
+    "concepts": [
+      {
+        "concept": "Concept-7",
+        "weight": 0.30821096897125244,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": 0.3002200126647949,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.296265184879303,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": -0.26957789063453674,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": 0.26340511441230774,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.2547711133956909,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": -0.2515617609024048,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": 0.24545133113861084,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": 0.24254110455513,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": -0.23837397992610931,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": 0.23332183063030243,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.2277909517288208,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": 0.22632867097854614,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.22572258114814758,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.22125689685344696,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": -0.19073739647865295,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": 0.1875743716955185,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.17773139476776123,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": -0.17631390690803528,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.1751450002193451,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": 0.17192567884922028,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.1630089282989502,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.16165094077587128,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": -0.1589028239250183,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": -0.15783239901065826,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": -0.15750248730182648,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.1562233418226242,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": 0.1556677669286728,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": 0.1386379599571228,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": 0.1351260542869568,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.12937089800834656,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": 0.12396415323019028,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": 0.12250538915395737,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": -0.12053708732128143,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": -0.11056087911128998,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": -0.10497907549142838,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": -0.10465455800294876,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 7: Concept-7 AND Concept-9 AND NOT Concept-16 AND NOT Concept-41 AND Concept-47 AND Concept-20 AND NOT Concept-45 AND Concept-43 AND Concept-49 AND NOT Concept-10 AND Concept-4 AND Concept-32 AND Concept-39 AND Concept-42 AND Concept-38 AND NOT Concept-5 AND Concept-34 AND Concept-29 AND NOT Concept-1 AND NOT Concept-30 AND Concept-48 AND NOT Concept-11 AND NOT Concept-26 AND NOT Concept-13 AND NOT Concept-12 AND NOT Concept-36 AND NOT Concept-46 AND Concept-22 AND Concept-28 AND Concept-6 AND Concept-15 AND Concept-23 AND Concept-14 AND NOT Concept-3 AND NOT Concept-25 AND NOT Concept-18 AND NOT Concept-24"
+  },
+  "Rule-8": {
+    "id": "Rule-8",
+    "bias": 0.01276472583413124,
+    "concepts": [
+      {
+        "concept": "Concept-19",
+        "weight": 0.3103356957435608,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": 0.2938789427280426,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.2933875024318695,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": 0.27462586760520935,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": 0.2683756947517395,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": 0.2563681900501251,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": -0.2535618245601654,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": -0.24822495877742767,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.23416481912136078,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.23017846047878265,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": 0.22865407168865204,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": 0.2228357344865799,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": 0.21331444382667542,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": -0.21007704734802246,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": -0.20063549280166626,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": 0.1987796276807785,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": 0.19809187948703766,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.1958446055650711,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": -0.1905113160610199,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": -0.18835218250751495,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": -0.18746201694011688,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": -0.1751255989074707,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": 0.17425847053527832,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": -0.16521631181240082,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.15329857170581818,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": -0.15307974815368652,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": 0.1514190286397934,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.13817991316318512,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.13673141598701477,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": -0.12969690561294556,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": 0.12829014658927917,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": 0.11446335911750793,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": -0.10295853763818741,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 8: Concept-19 AND Concept-17 AND Concept-5 AND Concept-22 AND Concept-2 AND Concept-9 AND NOT Concept-21 AND NOT Concept-3 AND NOT Concept-16 AND Concept-20 AND Concept-4 AND Concept-7 AND Concept-23 AND NOT Concept-40 AND NOT Concept-12 AND Concept-45 AND Concept-24 AND NOT Concept-34 AND NOT Concept-29 AND NOT Concept-27 AND NOT Concept-18 AND NOT Concept-43 AND Concept-1 AND NOT Concept-44 AND NOT Concept-31 AND NOT Concept-47 AND Concept-10 AND Concept-15 AND Concept-32 AND NOT Concept-13 AND Concept-14 AND Concept-30 AND NOT Concept-41"
+  },
+  "Rule-9": {
+    "id": "Rule-9",
+    "bias": 0.007447445765137672,
+    "concepts": [
+      {
+        "concept": "Concept-11",
+        "weight": -0.30677512288093567,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.29499754309654236,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.29167500138282776,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.28877726197242737,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": -0.28854167461395264,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": -0.28675147891044617,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.2763763964176178,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": -0.2657010853290558,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.2655617594718933,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": 0.2523247301578522,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": -0.24909792840480804,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.24137699604034424,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": 0.24061082303524017,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.23357056081295013,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": -0.22792239487171173,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": 0.2255445122718811,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": 0.22019776701927185,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": -0.21052008867263794,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.20157043635845184,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": 0.2002803087234497,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": 0.1969149261713028,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.19678112864494324,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": 0.19068945944309235,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": 0.189761683344841,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.1773805171251297,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.1641281247138977,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": -0.16187284886837006,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.16075193881988525,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": -0.15334871411323547,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.1527315378189087,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": 0.14306332170963287,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": -0.1332976073026657,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.1256948858499527,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": -0.11648780852556229,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": 0.10176520049571991,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 9: NOT Concept-11 AND Concept-18 AND Concept-12 AND Concept-40 AND NOT Concept-42 AND NOT Concept-0 AND Concept-32 AND NOT Concept-23 AND NOT Concept-26 AND Concept-9 AND NOT Concept-17 AND Concept-20 AND Concept-30 AND NOT Concept-46 AND NOT Concept-13 AND Concept-45 AND Concept-14 AND NOT Concept-8 AND Concept-25 AND Concept-41 AND Concept-6 AND NOT Concept-4 AND Concept-31 AND Concept-47 AND Concept-38 AND Concept-15 AND NOT Concept-29 AND NOT Concept-37 AND NOT Concept-35 AND NOT Concept-34 AND Concept-10 AND NOT Concept-48 AND NOT Concept-28 AND NOT Concept-19 AND Concept-27"
+  },
+  "Rule-10": {
+    "id": "Rule-10",
+    "bias": 0.009398909285664558,
+    "concepts": [
+      {
+        "concept": "Concept-27",
+        "weight": 0.295326828956604,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": 0.27911049127578735,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": 0.2687709331512451,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": -0.26377764344215393,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": 0.2598334550857544,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": 0.25549080967903137,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.25044289231300354,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.24792887270450592,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": -0.24004538357257843,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": 0.22890236973762512,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": 0.22169756889343262,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.21634253859519958,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": -0.20811691880226135,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": -0.20028677582740784,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.18824023008346558,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": -0.1834593415260315,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": -0.18255142867565155,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": -0.18240728974342346,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.18193715810775757,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": -0.1744992882013321,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.1728832721710205,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.15637153387069702,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": -0.15350249409675598,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": -0.1433342546224594,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": -0.129777729511261,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.12705150246620178,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": -0.12173397839069366,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": -0.1174488514661789,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.11486909538507462,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.10357803851366043,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.10269654542207718,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": -0.10227306187152863,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": -0.10016421228647232,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 10: Concept-27 AND Concept-24 AND Concept-16 AND NOT Concept-40 AND Concept-9 AND Concept-13 AND Concept-32 AND Concept-5 AND NOT Concept-47 AND Concept-46 AND Concept-26 AND Concept-36 AND NOT Concept-12 AND NOT Concept-29 AND Concept-25 AND NOT Concept-22 AND NOT Concept-3 AND NOT Concept-21 AND NOT Concept-30 AND NOT Concept-0 AND Concept-19 AND NOT Concept-4 AND NOT Concept-1 AND NOT Concept-20 AND NOT Concept-14 AND NOT Concept-11 AND NOT Concept-45 AND NOT Concept-23 AND NOT Concept-31 AND NOT Concept-37 AND Concept-38 AND NOT Concept-41 AND NOT Concept-18"
+  },
+  "Rule-11": {
+    "id": "Rule-11",
+    "bias": 0.01992187276482582,
+    "concepts": [
+      {
+        "concept": "Concept-47",
+        "weight": -0.30588585138320923,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.28894639015197754,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": 0.27898263931274414,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-33",
+        "weight": 0.2713128924369812,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.26668158173561096,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": -0.2665175497531891,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.2651025354862213,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": 0.25360846519470215,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": -0.25341564416885376,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": 0.2516613006591797,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.25115451216697693,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": -0.2507564127445221,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": -0.2500932216644287,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.24472250044345856,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": -0.24167895317077637,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": 0.24162466824054718,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": -0.23505468666553497,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": -0.23351219296455383,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": -0.2231684923171997,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": -0.2210388332605362,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": -0.2162237912416458,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": 0.21102389693260193,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.2031424343585968,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": -0.20006494224071503,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": 0.17842210829257965,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": -0.17804302275180817,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.15530413389205933,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": 0.15383127331733704,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.15353398025035858,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.1515738070011139,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": 0.14771634340286255,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": -0.119147390127182,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.11822003871202469,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": -0.11608868092298508,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": -0.11513026058673859,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.11449776589870453,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 11: NOT Concept-47 AND Concept-36 AND Concept-48 AND Concept-33 AND NOT Concept-4 AND NOT Concept-8 AND NOT Concept-31 AND Concept-30 AND NOT Concept-2 AND Concept-23 AND Concept-18 AND NOT Concept-42 AND NOT Concept-27 AND NOT Concept-11 AND NOT Concept-45 AND Concept-7 AND NOT Concept-43 AND NOT Concept-5 AND NOT Concept-44 AND NOT Concept-32 AND NOT Concept-35 AND Concept-49 AND Concept-19 AND NOT Concept-9 AND Concept-6 AND NOT Concept-40 AND NOT Concept-34 AND Concept-1 AND Concept-15 AND NOT Concept-28 AND Concept-41 AND NOT Concept-39 AND Concept-20 AND NOT Concept-12 AND NOT Concept-29 AND NOT Concept-37"
+  },
+  "Rule-12": {
+    "id": "Rule-12",
+    "bias": 0.0035336543805897236,
+    "concepts": [
+      {
+        "concept": "Concept-19",
+        "weight": -0.2808477282524109,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.27927324175834656,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": -0.2664971947669983,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.26136818528175354,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.2613260746002197,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": 0.2605893909931183,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": 0.2596166133880615,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.2585001587867737,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": -0.2564721703529358,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": 0.25589513778686523,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": 0.24240413308143616,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": 0.23027434945106506,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.2260809689760208,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": -0.2253800928592682,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": -0.20392176508903503,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": -0.20003435015678406,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": 0.19936442375183105,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.19227948784828186,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.1874638944864273,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": 0.18529818952083588,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": 0.17876724898815155,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": -0.1526036113500595,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": -0.15073740482330322,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": -0.1488678902387619,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": 0.12971019744873047,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": 0.12859199941158295,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.1215740218758583,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": 0.11873380094766617,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": -0.11356306076049805,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.11335258185863495,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": 0.11165322363376617,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": -0.10492583364248276,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 12: NOT Concept-19 AND Concept-29 AND NOT Concept-15 AND NOT Concept-28 AND Concept-32 AND Concept-30 AND Concept-34 AND NOT Concept-26 AND NOT Concept-40 AND Concept-46 AND Concept-16 AND Concept-0 AND Concept-42 AND NOT Concept-9 AND NOT Concept-8 AND NOT Concept-27 AND Concept-3 AND NOT Concept-37 AND Concept-25 AND Concept-2 AND Concept-10 AND NOT Concept-43 AND NOT Concept-22 AND NOT Concept-17 AND Concept-47 AND Concept-24 AND Concept-5 AND Concept-41 AND NOT Concept-14 AND NOT Concept-7 AND Concept-11 AND NOT Concept-36"
+  },
+  "Rule-13": {
+    "id": "Rule-13",
+    "bias": 0.015330994501709938,
+    "concepts": [
+      {
+        "concept": "Concept-5",
+        "weight": 0.30382484197616577,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": -0.281513512134552,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.28000524640083313,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.278255820274353,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": -0.2764520049095154,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.2632482051849365,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.25534775853157043,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.23642964661121368,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": -0.23328886926174164,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.23231516778469086,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.2284248322248459,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": 0.22290058434009552,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": -0.2177710235118866,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": -0.21730811893939972,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": -0.21617598831653595,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": -0.2033250331878662,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.19513081014156342,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": 0.19066616892814636,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.18707741796970367,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": 0.18118444085121155,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.1771484911441803,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": -0.15729813277721405,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.15532948076725006,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": -0.15305054187774658,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": 0.15195079147815704,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": 0.1502751260995865,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.144780695438385,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": -0.12955009937286377,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.12138739973306656,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": 0.11576548963785172,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.11463239043951035,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": 0.11258171498775482,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": -0.1091337725520134,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": 0.10100392252206802,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 13: Concept-5 AND NOT Concept-0 AND Concept-29 AND NOT Concept-28 AND NOT Concept-15 AND Concept-36 AND NOT Concept-37 AND Concept-38 AND NOT Concept-44 AND Concept-18 AND Concept-32 AND Concept-34 AND NOT Concept-20 AND NOT Concept-24 AND NOT Concept-25 AND NOT Concept-39 AND NOT Concept-4 AND Concept-26 AND NOT Concept-46 AND Concept-3 AND NOT Concept-31 AND NOT Concept-14 AND NOT Concept-11 AND NOT Concept-9 AND Concept-1 AND Concept-8 AND NOT Concept-30 AND NOT Concept-12 AND Concept-42 AND Concept-49 AND NOT Concept-7 AND Concept-43 AND NOT Concept-27 AND Concept-22"
+  },
+  "Rule-14": {
+    "id": "Rule-14",
+    "bias": 0.010228804312646389,
+    "concepts": [
+      {
+        "concept": "Concept-38",
+        "weight": 0.2891611158847809,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": -0.2866503894329071,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": 0.2795437276363373,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.2658315896987915,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": 0.26312172412872314,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": 0.2557913064956665,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": 0.25317007303237915,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": -0.24955901503562927,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": 0.24810270965099335,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.23198139667510986,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": 0.2244640439748764,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.2136847972869873,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": -0.2124972939491272,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": -0.21064835786819458,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": -0.20844011008739471,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.2003227323293686,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.19970308244228363,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": -0.1944589912891388,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": -0.19014579057693481,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.18034306168556213,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": 0.17387814819812775,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": 0.17190900444984436,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.16540080308914185,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": 0.15477804839611053,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.1545504629611969,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.1540835201740265,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.15376727283000946,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": -0.14959652721881866,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.14823366701602936,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.14244405925273895,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.14224086701869965,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": 0.1399421989917755,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": -0.1383434534072876,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": -0.13642627000808716,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.11694455146789551,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": -0.11407699435949326,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 14: Concept-38 AND NOT Concept-27 AND Concept-49 AND Concept-15 AND Concept-47 AND Concept-17 AND Concept-24 AND NOT Concept-35 AND Concept-39 AND NOT Concept-28 AND Concept-4 AND NOT Concept-7 AND NOT Concept-1 AND NOT Concept-20 AND NOT Concept-14 AND NOT Concept-16 AND Concept-19 AND NOT Concept-22 AND NOT Concept-5 AND Concept-42 AND Concept-10 AND Concept-2 AND NOT Concept-11 AND Concept-37 AND Concept-40 AND Concept-12 AND Concept-32 AND NOT Concept-44 AND Concept-36 AND Concept-18 AND NOT Concept-26 AND Concept-46 AND NOT Concept-21 AND NOT Concept-25 AND Concept-29 AND NOT Concept-23"
+  },
+  "Rule-15": {
+    "id": "Rule-15",
+    "bias": 0.0035488400608301163,
+    "concepts": [
+      {
+        "concept": "Concept-17",
+        "weight": 0.2977435290813446,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": -0.28490349650382996,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": -0.27853021025657654,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": 0.2685714066028595,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.2676807940006256,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": -0.2629888653755188,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": -0.2537144720554352,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.2516554594039917,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": -0.24975360929965973,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.24826066195964813,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": 0.24738512933254242,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": 0.23978064954280853,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.23493064939975739,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": -0.234119713306427,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": -0.23366351425647736,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.2313196361064911,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": -0.2278861105442047,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.22295865416526794,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": -0.2111995965242386,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": 0.2076088935136795,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": -0.19919534027576447,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": 0.18837279081344604,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": -0.17429165542125702,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.17106026411056519,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.16846303641796112,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.15873539447784424,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": 0.15758556127548218,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": 0.1562172919511795,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.15246810019016266,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": 0.14767242968082428,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": -0.1392984539270401,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-20",
+        "weight": 0.13285072147846222,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": -0.1322236955165863,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.11947274953126907,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": 0.11084990948438644,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-23",
+        "weight": 0.10895486921072006,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 15: Concept-17 AND NOT Concept-41 AND NOT Concept-6 AND Concept-49 AND NOT Concept-30 AND NOT Concept-8 AND NOT Concept-29 AND NOT Concept-34 AND NOT Concept-15 AND NOT Concept-26 AND Concept-35 AND Concept-7 AND Concept-19 AND NOT Concept-39 AND NOT Concept-32 AND Concept-25 AND NOT Concept-47 AND Concept-38 AND NOT Concept-42 AND Concept-14 AND NOT Concept-45 AND Concept-27 AND NOT Concept-10 AND Concept-12 AND NOT Concept-11 AND Concept-40 AND Concept-43 AND Concept-24 AND NOT Concept-28 AND Concept-44 AND NOT Concept-22 AND Concept-20 AND NOT Concept-2 AND Concept-5 AND Concept-0 AND Concept-23"
+  },
+  "Rule-16": {
+    "id": "Rule-16",
+    "bias": 0.017597198486328125,
+    "concepts": [
+      {
+        "concept": "Concept-42",
+        "weight": 0.296949177980423,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.28719720244407654,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": -0.285929799079895,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": -0.27903124690055847,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": -0.27835139632225037,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.26306772232055664,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.26039379835128784,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": 0.2517538368701935,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": -0.24627362191677094,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": -0.24418768286705017,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": 0.24116100370883942,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": 0.23627227544784546,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": 0.23592668771743774,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.22697964310646057,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": 0.22065936028957367,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.2192268669605255,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.2163933366537094,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": -0.2158551812171936,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": -0.20869500935077667,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": 0.19328629970550537,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": -0.18772739171981812,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.1814776211977005,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": 0.16550132632255554,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": -0.14467038214206696,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": -0.13560980558395386,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": -0.11708483844995499,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.11589779704809189,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": 0.11554999649524689,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": 0.10841916501522064,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": -0.10762389749288559,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.10281002521514893,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": -0.10261213779449463,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 16: Concept-42 AND Concept-12 AND NOT Concept-10 AND NOT Concept-44 AND NOT Concept-17 AND Concept-19 AND Concept-40 AND Concept-45 AND NOT Concept-24 AND NOT Concept-3 AND Concept-4 AND Concept-28 AND Concept-41 AND NOT Concept-46 AND Concept-2 AND NOT Concept-26 AND NOT Concept-7 AND NOT Concept-1 AND NOT Concept-29 AND Concept-6 AND NOT Concept-49 AND NOT Concept-16 AND Concept-13 AND NOT Concept-5 AND NOT Concept-15 AND NOT Concept-36 AND NOT Concept-31 AND Concept-37 AND Concept-21 AND NOT Concept-32 AND Concept-18 AND NOT Concept-39"
+  },
+  "Rule-17": {
+    "id": "Rule-17",
+    "bias": 0.01875203847885132,
+    "concepts": [
+      {
+        "concept": "Concept-24",
+        "weight": 0.3091122508049011,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": 0.2989741265773773,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": 0.29802703857421875,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": -0.273398220539093,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": 0.27308493852615356,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": -0.27233344316482544,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": 0.2654792070388794,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": -0.2573304772377014,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": 0.2507118880748749,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.2398914396762848,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.22462427616119385,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.22446079552173615,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": -0.20725247263908386,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": 0.20459593832492828,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": 0.20451030135154724,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": -0.20086215436458588,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": 0.19752489030361176,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": -0.19135378301143646,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": 0.18911461532115936,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-14",
+        "weight": -0.1846325844526291,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": 0.18386982381343842,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": -0.18359096348285675,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": -0.17940972745418549,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": 0.17928625643253326,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.17533928155899048,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": -0.1745644062757492,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.16276922821998596,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": -0.15857788920402527,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.15753352642059326,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": 0.14994506537914276,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.1356050670146942,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-49",
+        "weight": 0.13310909271240234,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.12755358219146729,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-6",
+        "weight": -0.11161808669567108,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": -0.10736904293298721,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": -0.10575619339942932,
+        "contribution": "negative"
+      }
+    ],
+    "description": "Rule 17: Concept-24 AND Concept-10 AND Concept-21 AND NOT Concept-12 AND Concept-11 AND NOT Concept-9 AND Concept-30 AND NOT Concept-40 AND Concept-19 AND NOT Concept-34 AND Concept-18 AND NOT Concept-7 AND NOT Concept-38 AND Concept-44 AND Concept-2 AND NOT Concept-5 AND Concept-28 AND NOT Concept-43 AND Concept-1 AND NOT Concept-14 AND Concept-8 AND NOT Concept-4 AND NOT Concept-17 AND Concept-41 AND NOT Concept-31 AND NOT Concept-0 AND Concept-25 AND NOT Concept-15 AND Concept-36 AND Concept-35 AND NOT Concept-26 AND Concept-49 AND NOT Concept-37 AND NOT Concept-6 AND NOT Concept-47 AND NOT Concept-29"
+  },
+  "Rule-18": {
+    "id": "Rule-18",
+    "bias": 0.004436987917870283,
+    "concepts": [
+      {
+        "concept": "Concept-49",
+        "weight": -0.3012380301952362,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.295076459646225,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-33",
+        "weight": 0.29489490389823914,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.29462531208992004,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-28",
+        "weight": -0.28548377752304077,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.28502529859542847,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": -0.28327691555023193,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-45",
+        "weight": 0.2789376676082611,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": -0.2782254219055176,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": -0.2634628713130951,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-9",
+        "weight": 0.25607815384864807,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": -0.2527678906917572,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": 0.2447831779718399,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.23124971985816956,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-4",
+        "weight": 0.22750407457351685,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-2",
+        "weight": 0.20902252197265625,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": 0.19995997846126556,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-39",
+        "weight": -0.19812549650669098,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.18937267363071442,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": 0.18889442086219788,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.18428854644298553,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.1755550652742386,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": 0.1700202375650406,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-46",
+        "weight": -0.16110029816627502,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-34",
+        "weight": -0.16078616678714752,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-48",
+        "weight": 0.13078592717647552,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.12247062474489212,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": 0.11777347326278687,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 18: NOT Concept-49 AND Concept-12 AND Concept-33 AND Concept-5 AND NOT Concept-28 AND Concept-38 AND NOT Concept-42 AND Concept-45 AND NOT Concept-16 AND NOT Concept-21 AND Concept-9 AND NOT Concept-15 AND Concept-11 AND NOT Concept-31 AND Concept-4 AND Concept-2 AND Concept-27 AND NOT Concept-39 AND Concept-18 AND Concept-43 AND Concept-36 AND Concept-40 AND Concept-32 AND NOT Concept-46 AND NOT Concept-34 AND Concept-48 AND NOT Concept-30 AND Concept-35"
+  },
+  "Rule-19": {
+    "id": "Rule-19",
+    "bias": 0.014250222593545914,
+    "concepts": [
+      {
+        "concept": "Concept-45",
+        "weight": 0.3070268929004669,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-44",
+        "weight": 0.3006908595561981,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-35",
+        "weight": -0.29868513345718384,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-42",
+        "weight": 0.2872544229030609,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-7",
+        "weight": -0.2747745215892792,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-37",
+        "weight": -0.27325472235679626,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-32",
+        "weight": -0.2708129584789276,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-25",
+        "weight": 0.2683972120285034,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-19",
+        "weight": -0.264671266078949,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-29",
+        "weight": 0.2559818923473358,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-21",
+        "weight": -0.2347705215215683,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-17",
+        "weight": 0.2297363132238388,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-5",
+        "weight": 0.2250421792268753,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-13",
+        "weight": 0.2222800850868225,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-38",
+        "weight": 0.21489770710468292,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-43",
+        "weight": 0.21407216787338257,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-31",
+        "weight": -0.21024081110954285,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-3",
+        "weight": -0.21013189852237701,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-11",
+        "weight": -0.2014278918504715,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-27",
+        "weight": -0.19983503222465515,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-30",
+        "weight": -0.19614465534687042,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-24",
+        "weight": 0.19155924022197723,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-1",
+        "weight": 0.19106291234493256,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-15",
+        "weight": 0.188930943608284,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-22",
+        "weight": -0.18764141201972961,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-40",
+        "weight": 0.17147761583328247,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-8",
+        "weight": 0.16063040494918823,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-12",
+        "weight": 0.15848971903324127,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-10",
+        "weight": -0.1526404619216919,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-18",
+        "weight": 0.14853642880916595,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-16",
+        "weight": 0.1393161118030548,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-0",
+        "weight": 0.13143165409564972,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-41",
+        "weight": -0.1275840848684311,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-47",
+        "weight": 0.12603560090065002,
+        "contribution": "positive"
+      },
+      {
+        "concept": "Concept-26",
+        "weight": -0.12139815092086792,
+        "contribution": "negative"
+      },
+      {
+        "concept": "Concept-36",
+        "weight": 0.11022055149078369,
+        "contribution": "positive"
+      }
+    ],
+    "description": "Rule 19: Concept-45 AND Concept-44 AND NOT Concept-35 AND Concept-42 AND NOT Concept-7 AND NOT Concept-37 AND NOT Concept-32 AND Concept-25 AND NOT Concept-19 AND Concept-29 AND NOT Concept-21 AND Concept-17 AND Concept-5 AND Concept-13 AND Concept-38 AND Concept-43 AND NOT Concept-31 AND NOT Concept-3 AND NOT Concept-11 AND NOT Concept-27 AND NOT Concept-30 AND Concept-24 AND Concept-1 AND Concept-15 AND NOT Concept-22 AND Concept-40 AND Concept-8 AND Concept-12 AND NOT Concept-10 AND Concept-18 AND Concept-16 AND Concept-0 AND NOT Concept-41 AND Concept-47 AND NOT Concept-26 AND Concept-36"
+  }
+}
