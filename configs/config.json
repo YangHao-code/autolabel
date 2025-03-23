@@ -1,0 +1,24 @@
+{
+    "model": {
+        "text_encoder": {
+            "pretrained_model": "/root/autodl-tmp/autolabel/abl-text/abl/nn/bert-base-uncased",
+            "output_dim": 768,
+            "use_pooler": false,
+            "freeze_bert": false
+        },
+        "concept_embedding": {
+            "embedding_dim": 128
+        },
+        "reasoning": {
+            "hidden_dim": 256,
+            "num_rules": 20
+        },
+        "num_concepts": 50
+    },
+    "training": {
+        "batch_size": 32,
+        "learning_rate": 1e-4,
+        "weight_decay": 1e-4,
+        "num_epochs": 50
+    }
+}
