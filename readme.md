@@ -1,15 +1,5 @@
 # ABL: A Naive Implementation of Auto Labelling System
 This is my graduation project v1 (metaphase).
-## Overview
-
-ABL combines neural networks and symbolic reasoning to create an interpretable text classification system. The model works by:
-
-1. Encoding text using a pre-trained language model (BERT)
-2. Detecting concepts present in the text
-3. Applying symbolic reasoning over detected concepts to make predictions
-4. Learning interpretable rules that connect concepts to labels
-
-The key advantage of this approach is that the model's decisions can be explained in terms of the concepts it identifies in the text and the rules it learns to connect these concepts to labels.
 
 ## Project Structure
 
@@ -70,5 +60,5 @@ python scripts/text_reasoning_test.py \
 - **Text Encoder**: Uses a pre-trained BERT model to encode text.
 - **Concept Embedding**: Detects concepts in text and represents them as embeddings.
 - **Quasi-Symbolic Reasoning**: Bridges neural perception with symbolic reasoning.
-- **NSCLReasoning**: Applies rule-based reasoning to connect concepts to labels.
+- **Reasoning**: Applies rule-based reasoning to connect concepts to labels.
 - **Program Executor**: Executes symbolic programs for interpretable predictions.
