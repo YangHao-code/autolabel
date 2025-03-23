@@ -36,6 +36,7 @@ def main():
     parser.add_argument('--resume', default='', help='checkpoint to resume from')
     parser.add_argument('--seed', type=int, default=42, help='random seed')
     parser.add_argument('--accum-steps', type=int, default=4, help='gradient accumulation steps')
+    parser.add_argument('--concept-loss-weight', type=float, default=0.5, help='weight for concept loss')
     args = parser.parse_args()
     
     # Set random seed
@@ -253,7 +254,7 @@ def train_one_epoch(quasi_symbolic, reasoning, data_loader, optimizer, cls_loss_
         cls_loss = cls_loss_fn(reasoning_outputs['label_logits'], label_indices)
         if has_concept_annot:
             concept_loss = concept_loss_fn(quasi_outputs['concept_logits'], concept_annots)
-            raw_loss = cls_loss + concept_loss
+            raw_loss = cls_loss + args.concept_loss_weight * concept_loss
         else:
             concept_loss = torch.tensor(0.0, device=device)
             raw_loss = cls_loss
